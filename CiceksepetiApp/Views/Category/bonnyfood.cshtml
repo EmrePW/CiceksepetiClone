@@ -1,0 +1,21 @@
+@model IEnumerable<Product>
+
+<head>
+    <link asp-append-version="true" rel="stylesheet" href="~/css/reset.css">
+    <link asp-append-version="true" rel="stylesheet" href="~/css/categoryFlower.css">
+</head>
+
+<div class="filters">
+    @await Component.InvokeAsync("CategoriesMenu", 2)
+    @await Component.InvokeAsync("ProductFilterMenu")
+</div>
+
+<div class="products">
+    @foreach (var product in Model)
+    {
+        if (product.SuperCategory == 2)
+        {
+            <partial name="_productCard" model="product"></partial>
+        }
+    }
+</div>

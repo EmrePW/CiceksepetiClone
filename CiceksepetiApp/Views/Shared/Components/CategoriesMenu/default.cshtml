@@ -1,0 +1,13 @@
+@model IEnumerable<Category>
+
+<link rel="stylesheet" href="~/css/categoriesMenu.css">
+
+<ul class="category__list">
+    @foreach (var cat in Model)
+    {
+        <li class="category__item">
+            @* add image*@
+            <a asp-route-subCategory="@cat.CategoryID">@cat.CategoryName</a>
+        </li>
+    }
+</ul>

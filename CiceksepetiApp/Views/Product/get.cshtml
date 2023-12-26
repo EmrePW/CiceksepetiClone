@@ -1,0 +1,245 @@
+@model Product
+@{
+    String[] months = new string[] {"Ocak","Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz", "Ağustos", "Eylül",
+"Ekim", "Kasım", "Aralık"};
+}
+
+<head>
+    <link rel="stylesheet" href="~/css/productGet.css">
+</head>
+
+<div class="product">
+    <div class="image">
+        <img src="@(Model.ImageURL ?? "/images/default.png")" alt="...">
+    </div>
+    <div class="product_details">
+        <div class="name_and_price">
+            <h3 class="product_name">@Model.ProductName</h3>
+            <div class="price">
+                @if (Model.DiscountedPrice is not null)
+                {
+                    <div class="price-wrap">
+                        <div class="discount_amount">%@((int)(100 - (100 * Model.DiscountedPrice) /
+                        Model.UnitPrice))</div>
+                        <div class="price_area">
+                            <div class="normal_price">@Model.UnitPrice TL</div>
+                            <div class="discounted-price">@Model.DiscountedPrice TL
+                                @if (Model.FreeShip.Equals(true))
+                                {
+                                    <span class="freeship-text">& Ücretsiz Teslimat</span>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                }
+                else
+                {
+                    <div class="standard-price">@Model.UnitPrice TL
+                        @if (Model.FreeShip.Equals(true))
+                        {
+                            <span class="freeship-text">& Ücretsiz Teslimat</span>
+                        }
+                    </div>
+                }
+                <div class="ratings">
+                    <p>Bu ürün @ViewBag.ratings.Count kişi tarafından değerlendirildi</p>
+                    <div class="comment-stars">
+                        @for (int i = 1; i <= (int)ViewBag.AverageRating; i++)
+                        {
+                            <i class="fa-solid fa-star" style="color: #fff700;"></i>
+                        }
+                        @for (int i = 5; i > (int)ViewBag.AverageRating; i--)
+                        {
+                            <i class="fa-solid fa-star" style="color: #949494;"></i>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+        <form class="getForm" id=@Model.ProductID method="POST" asp-page="/cart">
+            <input type="hidden" asp-for="ProductID">
+            <div class="citySelect">
+                <input type="text" list="deliverCityOptions" name="deliverCity" placeholder="Select the deliver city"
+                    required>
+                <datalist id="deliverCityOptions">
+                    <option value="TRABZON">Trabzon</option>
+                    <option value="ERZURUM">Erzurum</option>
+                    <option value="ANKARA">Ankara</option>
+                    <option value="ISTANBUL">İstanbul</option>
+                    <option value="IZMIR">İzmir</option>
+                    <option value="ANTALYA">Antalya</option>
+                </datalist>
+            </div>
+            <div class="dateSelect">
+                <div class="selection">
+                    @DateTime.Now.Day @months[DateTime.Now.Month - 1]
+                    <input type="radio" name="deliverDate" value='@DateTime.Now.ToString("yyyy-MM-dd")'>
+                </div>
+                <div class="selection">
+                    @DateTime.Now.AddDays(1).Day @months[DateTime.Now.Month - 1]
+                    <input type="radio" name="deliverDate" value='@DateTime.Now.AddDays(1).ToString("yyyy-MM-dd")'>
+                </div>
+                <div class="selection">
+                    @DateTime.Now.AddDays(2).Day @months[DateTime.Now.Month - 1]
+                    <input type="radio" name="deliverDate" value='@DateTime.Now.AddDays(2).ToString("yyyy-MM-dd")'>
+                </div>
+                <div class="selection">
+                    Calendar
+                    <input type="date" name="deliverDateCalendar" id=""
+                        min="@DateTime.Now.Year-@DateTime.Now.Month-@DateTime.Now.AddDays(3).Day">
+                </div>
+            </div>
+            <div class="timeSelect">
+                <select name="deliverTime" id="" required>
+                    <option value="09.00 - 12.00">09.00 - 12.00</option>
+                    <option value="12.00 - 15.00">12.00 - 15.00</option>
+                    <option value="15.00 - 18.00">15.00 - 18.00</option>
+                    <option value="18.00 - 22.00">18.00 - 22.00</option>
+                </select>
+            </div>
+
+            <div class="deliveryInfo">
+                <p class="sameday">
+                    <i class="fa-solid fa-truck-fast"></i>
+                    Her Gün Aynı Gün Teslimat
+                </p>
+                <p class="freeship">
+                    <i class="fa-regular fa-circle-check"></i>
+                    Ücretsiz Teslimat
+                </p>
+                <p class="securepay">
+                    <i class="fa-solid fa-lock"></i>
+                    Güvenli Ödeme
+                </p>
+            </div>
+            <div class="button-group">
+                <button class="submit-button" type="submit">Order</button>
+                @if (ViewBag.FavouriteItem)
+                {
+                    <a asp-controller="Review" asp-action="FavouriteItem" asp-route-productId="@Model.ProductID"
+                        class="fav-button favourited" type="button">
+                        <i class="fa-solid fa-heart" style="color: #ffffff;"></i>
+                    </a>
+                }
+                else
+                {
+                    <a asp-controller="Review" asp-action="FavouriteItem" asp-route-productId="@Model.ProductID"
+                        class="fav-button" type="button">
+                        <i class="fa-regular fa-heart"></i>
+                    </a>
+                }
+                <div class="fav-count">
+                    @ViewBag.favouiteCount kişi tarafından beğenildi.
+                </div>
+
+            </div>
+            <div class="securityInfo">
+                <i class="fa-solid fa-camera"></i>
+                Siparişini yola çıkmadan gör! Hazırlanan siparişinizin fotoğrafını önce siz görür ve onaylarsınız.
+            </div>
+        </form>
+        @* <div class="errors" asp-validation-summary="All"></div> *@
+    </div>
+</div>
+<h3 class="review-header">Yorumlar</h3>
+<div class="product-ratings">
+    @if (User.Identity.IsAuthenticated)
+    {
+        <form class="send-review-form" asp-controller="Review" asp-action="Create" method="POST">
+            <input type="hidden" name="ProductID" value="@Model.ProductID">
+            <input type="hidden" name="username" value="@User.Identity.Name">
+            <div class="review-form-header">Siz de kendi değerlendirmenizi bırakabilirsiniz.</div>
+            <div class="review-form-area">
+                <div class="star-rating">
+                    <p>Bu ürüne 5 üzerinden kaç verirdiniz ?</p>
+                    <div class="rating-inputs">
+                        <div><input type="radio" name="RatingValue" class="review-form-star-rating" value="1" required>1
+                        </div>
+                        <div><input type="radio" name="RatingValue" class="review-form-star-rating" value="2">2</div>
+                        <div><input type="radio" name="RatingValue" class="review-form-star-rating" value="3">3</div>
+                        <div><input type="radio" name="RatingValue" class="review-form-star-rating" value="4">4</div>
+                        <div><input type="radio" name="RatingValue" class="review-form-star-rating" value="5">5</div>
+                    </div>
+                </div>
+                <textarea name="opinion" id="review-form-textarea" cols="100" rows="2"
+                    placeholder="Yorumlarınız bizim için önemli. Beğendiğiniz veya beğenmediğiniz yönlerini yazabilirsiniz. Var olan yorumunuzu değiştirmek için burayı kullanabilirsiniz."></textarea>
+            </div>
+            <button class="review-form-submit" type="submit">Submit</button>
+        </form>
+    }
+    else
+    {
+        <h3>You must Login to leave a review</h3>
+    }
+
+    @if (ViewBag.Ratings.Count == 0)
+    {
+        <h3 class="product__header">Looks like no one has commented yet</h3>
+        <h4 class="product__header">Be the first one the comment.</h4>
+    }
+    else
+    {
+        foreach (var rating in ViewBag.Ratings)
+        {
+            if (rating.Opinion is not null)
+            {
+                <div class="comment">
+                    <div class="comment-user-info">
+                        <div class="comment-stars">
+                            @for (int i = 1; i <= Int16.Parse(rating.RatingValue); i++)
+                            {
+                                <i class="fa-solid fa-star" style="color: #fff700;"></i>
+                            }
+                            @for (int i = 5; i > Int16.Parse(rating.RatingValue); i--)
+                            {
+                                <i class="fa-solid fa-star" style="color: #949494;"></i>
+                            }
+                        </div>
+                        @if (User.Identity.Name.Equals("Admin"))
+                        {
+                            <div class="admin-special">
+                                <p class="review-username">@rating.UserID</p>
+                                <i class="fa-solid fa-circle-check" style="color: #0045bd;"></i>
+                            </div>
+                        }
+                        else
+                        {
+                            <p class="review-username">@rating.UserID</p>
+                        }
+                        <p>@rating.RatedAt.ToLongDateString()</p>
+
+                    </div>
+                    <div class="comment-itself">
+                        @rating.Opinion
+                    </div>
+                </div>
+            }
+            else if (rating.Opinion is null && rating.RatingValue is not null)
+            {
+                <div class="comment">
+                    @if (User.Identity.Name.Equals("Admin"))
+                    {
+                        <div class="admin-special">
+                            <p class="review-username">@rating.UserID</p>
+                            <i class="fa-solid fa-circle-check" style="color: #0045bd; display: inline"></i>
+                        </div>
+                    }
+                    else
+                    {
+                        <p class="review-username">@rating.UserID</p>
+                    }
+                    <div class="comment-stars">
+                        @for (int i = 1; i <= Int16.Parse(rating.RatingValue); i++)
+                        {
+                            <i class="fa-solid fa-star" style="color: #fff700;"></i>
+                        }
+                        @for (int i = 5; i > Int16.Parse(rating.RatingValue); i--)
+                        {
+                            <i class="fa-solid fa-star" style="color: #949494;"></i>
+                        }
+                    </div>
+                </div>
+            }
+        }
+    }
+</div>

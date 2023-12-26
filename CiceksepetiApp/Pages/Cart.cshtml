@@ -1,0 +1,97 @@
+@page "/cart"
+@model CartModel
+
+<head>
+    <link rel="stylesheet" href="~/css/cart.css">
+</head>
+
+<div class="table-wrap">
+    @if (Model.cart.CartLines.Count.Equals(0))
+    {
+        <div class="empty__cart">
+            <i class="fa-solid fa-cart-shopping fa-2xl" style="color: #00990a;"></i>
+            Sepetinizde ürün bulunmamaktadır.
+            <a asp-controller="Home">Alışverişe başla</a>
+        </div>
+    }
+    else
+    {
+        <h4 class="cart__header">
+            <i class="fa-solid fa-cart-shopping"></i>
+            My Cart
+        </h4>
+        <div class="section1">
+            <div class="all_products">
+                @foreach (var line in Model.cart.CartLines)
+                {
+                    <div class="product_wrapper">
+                        <h3 class="product__name">Product @(line.CartlineID + 1)/
+                            <a asp-controller="Product" asp-action="Get"
+                                asp-route-id="@line.Product.ProductID">@line.Product.ProductName</a>
+                        </h3>
+                        <div class="product__details">
+                            <img src="@(line.Product.ImageURL ?? "/images/default.png")" alt="" class="product__image">
+                            <div class="product__details__information">
+                                <h5 class="product__deliverdate__header">Şirket :
+                                    @Model._manager.CompanyService.GetOneCompany(line.Product.CompanyID, false).CompanyName</h5>
+                                <h5 class="product__deliverdate__header">Teslim Edilecek Şehir : @line.DeliverCity</h5>
+                                <h5 class="product__deliverdate__header">Teslimat tarihi:</h5>
+                                <div class="product__deliverdate">@line.DeliverDate @line.DeliverTime</div>
+                                @if (line.Product.FreeShip.Equals(true))
+                                {
+                                    <div class="product__freeship">Ücretsiz Teslimat</div>
+                                }
+                                @if (line.Product.DiscountedPrice is not null)
+                                {
+                                    <div class="product__standartPrice">@line.Product.UnitPrice</div>
+                                    <div class="product__discountPrice">@line.Product.DiscountedPrice</div>
+                                }
+                                else
+                                {
+                                    <div class="product__normalPrice">@line.Product.UnitPrice</div>
+                                }
+                            </div>
+                        </div>
+                        <div class="product__remove">
+                            <form asp-page-handler="Remove" method="post">
+                                <input type="hidden" name="id" value="@line.Product.ProductID">
+                                <button class="remove__button" type="submit">
+                                    <i class="fa-solid fa-xmark fa-2xl" style="color: #ffffff;"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                }
+            </div>
+            <div class="checkout_menu">
+                <a class="checkout_button" asp-controller="Order" asp-action="Index">Order</a>
+                <div class="order__summary">
+                    <div class="summary__header">
+                        Order Summary
+                    </div>
+                    <div class="summary__subtotal">
+                        <div class="subtotal__text">Toplam:</div>
+                        <div class="subtotal__amount">
+                            @{
+                                decimal sum = 0;
+                                foreach (var line in Model.cart.CartLines)
+                                {
+                                    if (line.Product.DiscountedPrice is null)
+                                    {
+
+                                        sum += line.Product.UnitPrice;
+                                    }
+                                    else
+                                    {
+                                        sum += (decimal)line.Product.DiscountedPrice;
+                                    }
+                                }
+                            }
+                            @sum
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>

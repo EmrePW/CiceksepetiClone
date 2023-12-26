@@ -1,0 +1,35 @@
+@model LoginModel
+
+<head>
+    <link rel="stylesheet" href="~/css/AccountCss.css">
+</head>
+
+<div class="centered">
+    <div class="error" asp-validation-summary="All"></div>
+    <div class="login-wrap">
+        <h3 class="login__header">Login</h3>
+        <form class="login__form" asp-action="Login" method="POST">
+            <div class="username__area">
+                <label asp-for="userName">Kullanıcı Adı</label>
+                <input type="text" asp-for="userName" id="username-input">
+            </div>
+
+            <div class="password__area">
+                <label asp-for="userPassword">Şifre</label>
+                <input type="password" asp-for="userPassword" id="password-input">
+            </div>
+
+            <button class="submit-button" type="submit">Login</button>
+        </form>
+
+        <div class="login__other">
+            <a href="#" class="link">Forgot Password?</a>
+        </div>
+
+    </div>
+
+    <div class="">
+        Dont have an account?<a class="link" style="color: var(--clr-primary)" asp-action="Register"> Register
+            here</a>
+    </div>
+</div>

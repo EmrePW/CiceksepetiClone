@@ -1,0 +1,217 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = CiceksepetiApp
+build_property.RootNamespace = CiceksepetiApp
+build_property.ProjectDir = D:\skool\5th Half-Year\DBMS\Ciceksepeti\CiceksepetiApp\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\skool\5th Half-Year\DBMS\Ciceksepeti\CiceksepetiApp
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/skool/5th Half-Year/DBMS/Ciceksepeti/CiceksepetiApp/Areas/Corporate/Views/Dashboard/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29ycG9yYXRlXFZpZXdzXERhc2hib2FyZFxpbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/skool/5th Half-Year/DBMS/Ciceksepeti/CiceksepetiApp/Areas/Corporate/Views/Order/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29ycG9yYXRlXFZpZXdzXE9yZGVyXGluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/skool/5th Half-Year/DBMS/Ciceksepeti/CiceksepetiApp/Areas/Corporate/Views/Order/update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29ycG9yYXRlXFZpZXdzXE9yZGVyXHVwZGF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/skool/5th Half-Year/DBMS/Ciceksepeti/CiceksepetiApp/Areas/Corporate/Views/Product/create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29ycG9yYXRlXFZpZXdzXFByb2R1Y3RcY3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/skool/5th Half-Year/DBMS/Ciceksepeti/CiceksepetiApp/Areas/Corporate/Views/Product/get.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29ycG9yYXRlXFZpZXdzXFByb2R1Y3RcZ2V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/skool/5th Half-Year/DBMS/Ciceksepeti/CiceksepetiApp/Areas/Corporate/Views/Product/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29ycG9yYXRlXFZpZXdzXFByb2R1Y3RcaW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/skool/5th Half-Year/DBMS/Ciceksepeti/CiceksepetiApp/Areas/Corporate/Views/Product/update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29ycG9yYXRlXFZpZXdzXFByb2R1Y3RcdXBkYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/skool/5th Half-Year/DBMS/Ciceksepeti/CiceksepetiApp/Areas/Corporate/Views/Shared/_corporateHeader.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29ycG9yYXRlXFZpZXdzXFNoYXJlZFxfY29ycG9yYXRlSGVhZGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/skool/5th Half-Year/DBMS/Ciceksepeti/CiceksepetiApp/Areas/Corporate/Views/Shared/_corporateLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29ycG9yYXRlXFZpZXdzXFNoYXJlZFxfY29ycG9yYXRlTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/skool/5th Half-Year/DBMS/Ciceksepeti/CiceksepetiApp/Areas/Corporate/Views/Shared/_orderCard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29ycG9yYXRlXFZpZXdzXFNoYXJlZFxfb3JkZXJDYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/skool/5th Half-Year/DBMS/Ciceksepeti/CiceksepetiApp/Areas/Corporate/Views/Shared/_productCard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29ycG9yYXRlXFZpZXdzXFNoYXJlZFxfcHJvZHVjdENhcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/skool/5th Half-Year/DBMS/Ciceksepeti/CiceksepetiApp/Areas/Corporate/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29ycG9yYXRlXFZpZXdzXF9WaWV3SW1wb3J0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/skool/5th Half-Year/DBMS/Ciceksepeti/CiceksepetiApp/Areas/Corporate/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29ycG9yYXRlXFZpZXdzXF9WaWV3U3RhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/skool/5th Half-Year/DBMS/Ciceksepeti/CiceksepetiApp/Areas/User/Views/Dashboard/changepassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xEYXNoYm9hcmRcY2hhbmdlcGFzc3dvcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/skool/5th Half-Year/DBMS/Ciceksepeti/CiceksepetiApp/Areas/User/Views/Dashboard/favourites.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xEYXNoYm9hcmRcZmF2b3VyaXRlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/skool/5th Half-Year/DBMS/Ciceksepeti/CiceksepetiApp/Areas/User/Views/Dashboard/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xEYXNoYm9hcmRcaW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/skool/5th Half-Year/DBMS/Ciceksepeti/CiceksepetiApp/Areas/User/Views/Dashboard/ratings.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xEYXNoYm9hcmRccmF0aW5ncy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/skool/5th Half-Year/DBMS/Ciceksepeti/CiceksepetiApp/Areas/User/Views/Order/get.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xPcmRlclxnZXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/skool/5th Half-Year/DBMS/Ciceksepeti/CiceksepetiApp/Areas/User/Views/Order/update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xPcmRlclx1cGRhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/skool/5th Half-Year/DBMS/Ciceksepeti/CiceksepetiApp/Areas/User/Views/Shared/_navigationMenu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xTaGFyZWRcX25hdmlnYXRpb25NZW51LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/skool/5th Half-Year/DBMS/Ciceksepeti/CiceksepetiApp/Areas/User/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/skool/5th Half-Year/DBMS/Ciceksepeti/CiceksepetiApp/Areas/User/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xfVmlld1N0YXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/skool/5th Half-Year/DBMS/Ciceksepeti/CiceksepetiApp/Pages/Cart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/skool/5th Half-Year/DBMS/Ciceksepeti/CiceksepetiApp/Pages/OrderComplete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZXJDb21wbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/skool/5th Half-Year/DBMS/Ciceksepeti/CiceksepetiApp/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/skool/5th Half-Year/DBMS/Ciceksepeti/CiceksepetiApp/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/skool/5th Half-Year/DBMS/Ciceksepeti/CiceksepetiApp/Views/Account/corporateregister.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxjb3Jwb3JhdGVyZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/skool/5th Half-Year/DBMS/Ciceksepeti/CiceksepetiApp/Views/Account/login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxsb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/skool/5th Half-Year/DBMS/Ciceksepeti/CiceksepetiApp/Views/Account/register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxyZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/skool/5th Half-Year/DBMS/Ciceksepeti/CiceksepetiApp/Views/Category/bonnyfood.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcYm9ubnlmb29kLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/skool/5th Half-Year/DBMS/Ciceksepeti/CiceksepetiApp/Views/Category/flower.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcZmxvd2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/skool/5th Half-Year/DBMS/Ciceksepeti/CiceksepetiApp/Views/Category/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcaW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/skool/5th Half-Year/DBMS/Ciceksepeti/CiceksepetiApp/Views/Home/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxpbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/skool/5th Half-Year/DBMS/Ciceksepeti/CiceksepetiApp/Views/Order/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcaW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/skool/5th Half-Year/DBMS/Ciceksepeti/CiceksepetiApp/Views/Order/Track.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcVHJhY2suY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/skool/5th Half-Year/DBMS/Ciceksepeti/CiceksepetiApp/Views/Order/TrackResult.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcVHJhY2tSZXN1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/skool/5th Half-Year/DBMS/Ciceksepeti/CiceksepetiApp/Views/Order/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/skool/5th Half-Year/DBMS/Ciceksepeti/CiceksepetiApp/Views/Order/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/skool/5th Half-Year/DBMS/Ciceksepeti/CiceksepetiApp/Views/Product/get.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxnZXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/skool/5th Half-Year/DBMS/Ciceksepeti/CiceksepetiApp/Views/Shared/Components/CategoriesMenu/default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ2F0ZWdvcmllc01lbnVcZGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/skool/5th Half-Year/DBMS/Ciceksepeti/CiceksepetiApp/Views/Shared/Components/ProductFilterMenu/default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcUHJvZHVjdEZpbHRlck1lbnVcZGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/skool/5th Half-Year/DBMS/Ciceksepeti/CiceksepetiApp/Views/Shared/_categoryCard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9jYXRlZ29yeUNhcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/skool/5th Half-Year/DBMS/Ciceksepeti/CiceksepetiApp/Views/Shared/_footer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9mb290ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/skool/5th Half-Year/DBMS/Ciceksepeti/CiceksepetiApp/Views/Shared/_header.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9oZWFkZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/skool/5th Half-Year/DBMS/Ciceksepeti/CiceksepetiApp/Views/Shared/_layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9sYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/skool/5th Half-Year/DBMS/Ciceksepeti/CiceksepetiApp/Views/Shared/_orderHeader.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9vcmRlckhlYWRlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/skool/5th Half-Year/DBMS/Ciceksepeti/CiceksepetiApp/Views/Shared/_orderLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9vcmRlckxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/skool/5th Half-Year/DBMS/Ciceksepeti/CiceksepetiApp/Views/Shared/_productCard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9wcm9kdWN0Q2FyZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/skool/5th Half-Year/DBMS/Ciceksepeti/CiceksepetiApp/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/skool/5th Half-Year/DBMS/Ciceksepeti/CiceksepetiApp/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

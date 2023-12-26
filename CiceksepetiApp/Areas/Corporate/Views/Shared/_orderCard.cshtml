@@ -1,0 +1,39 @@
+@model OrderLineModel
+
+<head>
+    <link rel="stylesheet" href="~/css/corporateOrderCard.css">
+</head>
+
+<div class="line">
+    <div class="line-image">
+        <img style="width:75px; aspect-ratio: 1;; border-radius: .5rem"
+            src="@(Model.line?.Product.ImageURL ?? "/images/default.png")" alt="...">
+    </div>
+    <div class="line-details">
+        <h2>Ürün Bilgileri</h2>
+        <div>@Model.line?.Product.ProductName (@Model.line?.Product.ProductID)</div>
+        <div>@Model.line?.DeliverCity</div>
+        <div>@Model.line?.DeliverDate @Model.line?.DeliverTime</div>
+    </div>
+    <div class="line-order">
+        <h2>Müşteri Bilgileri</h2>
+        <div>@Model.order?.ReceiverName</div>
+        <div>@Model.order?.PhoneNumber</div>
+        <div>@Model.order?.Line1 @Model.order?.City</div>
+        <div>@Model.order?.OrderDate</div>
+    </div>
+    <div class="line-states">
+        <button type="button" class="state-button-button ready" disabled="@Model.line?.IsReady">
+            <a class="state-button ready " asp-area="Corporate" asp-controller="Order" asp-action="Update"
+                asp-route-id="@Model.line?.CartlineID" asp-route-operation="ready">Hazırlandı</a>
+        </button>
+        <button type="button" class="state-button-button ship" disabled="@Model.line?.IsShipped">
+            <a class="state-button ship" asp-area="Corporate" asp-controller="Order" asp-action="Update"
+                asp-route-id="@Model.line?.CartlineID" asp-route-operation="ship">Kargoya Verildi</a>
+        </button>
+        <button type="button" class="state-button-button complete" disabled="@Model.line?.IsCompleted">
+            <a class="state-button complete" asp-area="Corporate" asp-controller="Order" asp-action="Update"
+                asp-route-id="@Model.line?.CartlineID" asp-route-operation="complete">Tamamla</a>
+        </button>
+    </div>
+</div>

@@ -1,0 +1,393 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\css\\AccountCss.css",
+      "PackagePath": "staticwebassets\\css\\AccountCss.css"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\css\\HomeIndex.css",
+      "PackagePath": "staticwebassets\\css\\HomeIndex.css"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\css\\cart.css",
+      "PackagePath": "staticwebassets\\css\\cart.css"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\css\\categoriesMenu.css",
+      "PackagePath": "staticwebassets\\css\\categoriesMenu.css"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\css\\categoryCard.css",
+      "PackagePath": "staticwebassets\\css\\categoryCard.css"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\css\\categoryFlower.css",
+      "PackagePath": "staticwebassets\\css\\categoryFlower.css"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\css\\categoryIndex.css",
+      "PackagePath": "staticwebassets\\css\\categoryIndex.css"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\css\\corporateHeader.css",
+      "PackagePath": "staticwebassets\\css\\corporateHeader.css"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\css\\corporateIndex.css",
+      "PackagePath": "staticwebassets\\css\\corporateIndex.css"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\css\\corporateLayout.css",
+      "PackagePath": "staticwebassets\\css\\corporateLayout.css"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\css\\corporateOrderCard.css",
+      "PackagePath": "staticwebassets\\css\\corporateOrderCard.css"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\css\\corporateProductCard.css",
+      "PackagePath": "staticwebassets\\css\\corporateProductCard.css"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\css\\corporateProductCreate.css",
+      "PackagePath": "staticwebassets\\css\\corporateProductCreate.css"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\css\\corporateProductIndex.css",
+      "PackagePath": "staticwebassets\\css\\corporateProductIndex.css"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\css\\layout.css",
+      "PackagePath": "staticwebassets\\css\\layout.css"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\css\\orderAll.css",
+      "PackagePath": "staticwebassets\\css\\orderAll.css"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\css\\orderHeader.css",
+      "PackagePath": "staticwebassets\\css\\orderHeader.css"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\css\\orderLayout.css",
+      "PackagePath": "staticwebassets\\css\\orderLayout.css"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\css\\orderTrack.css",
+      "PackagePath": "staticwebassets\\css\\orderTrack.css"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\css\\orderTrackResult.css",
+      "PackagePath": "staticwebassets\\css\\orderTrackResult.css"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\css\\pageComplete.css",
+      "PackagePath": "staticwebassets\\css\\pageComplete.css"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\css\\pageTrack.css",
+      "PackagePath": "staticwebassets\\css\\pageTrack.css"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\css\\productCard.css",
+      "PackagePath": "staticwebassets\\css\\productCard.css"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\css\\productFilterMenu.css",
+      "PackagePath": "staticwebassets\\css\\productFilterMenu.css"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\css\\productGet.css",
+      "PackagePath": "staticwebassets\\css\\productGet.css"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\css\\reset.css",
+      "PackagePath": "staticwebassets\\css\\reset.css"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\css\\userChangePassword.css",
+      "PackagePath": "staticwebassets\\css\\userChangePassword.css"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\css\\userFavourites.css",
+      "PackagePath": "staticwebassets\\css\\userFavourites.css"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\css\\userIndex.css",
+      "PackagePath": "staticwebassets\\css\\userIndex.css"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\css\\userNavigationMenu.css",
+      "PackagePath": "staticwebassets\\css\\userNavigationMenu.css"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\css\\userOrderGet.css",
+      "PackagePath": "staticwebassets\\css\\userOrderGet.css"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\css\\userRatings.css",
+      "PackagePath": "staticwebassets\\css\\userRatings.css"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\images\\Christine2.jpeg",
+      "PackagePath": "staticwebassets\\images\\Christine2.jpeg"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\images\\Christinee.jpeg",
+      "PackagePath": "staticwebassets\\images\\Christinee.jpeg"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\images\\_48323955-9ed3-44e4-8b78-6ec4f3af7948.jpeg",
+      "PackagePath": "staticwebassets\\images\\_48323955-9ed3-44e4-8b78-6ec4f3af7948.jpeg"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\images\\bonnyfood.png",
+      "PackagePath": "staticwebassets\\images\\bonnyfood.png"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\images\\default.png",
+      "PackagePath": "staticwebassets\\images\\default.png"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\images\\favicon.ico",
+      "PackagePath": "staticwebassets\\images\\favicon.ico"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\images\\flower.png",
+      "PackagePath": "staticwebassets\\images\\flower.png"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\images\\logo-corporate.png",
+      "PackagePath": "staticwebassets\\images\\logo-corporate.png"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\images\\logo.png",
+      "PackagePath": "staticwebassets\\images\\logo.png"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\images\\plane1.jpeg",
+      "PackagePath": "staticwebassets\\images\\plane1.jpeg"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\images\\plane2.jpeg",
+      "PackagePath": "staticwebassets\\images\\plane2.jpeg"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\images\\plane3.jpeg",
+      "PackagePath": "staticwebassets\\images\\plane3.jpeg"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\images\\plane4.jpeg",
+      "PackagePath": "staticwebassets\\images\\plane4.jpeg"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\images\\plane5.jpeg",
+      "PackagePath": "staticwebassets\\images\\plane5.jpeg"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\images\\plane6.jpg",
+      "PackagePath": "staticwebassets\\images\\plane6.jpg"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\images\\plane7.jpg",
+      "PackagePath": "staticwebassets\\images\\plane7.jpg"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\images\\star.svg",
+      "PackagePath": "staticwebassets\\images\\star.svg"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\lib\\font-awesome\\css\\all.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\all.css"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\lib\\font-awesome\\css\\all.min.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\all.min.css"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\lib\\font-awesome\\css\\brands.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\brands.css"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\lib\\font-awesome\\css\\brands.min.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\brands.min.css"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\lib\\font-awesome\\css\\fontawesome.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\fontawesome.css"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\lib\\font-awesome\\css\\fontawesome.min.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\fontawesome.min.css"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\lib\\font-awesome\\css\\regular.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\regular.css"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\lib\\font-awesome\\css\\regular.min.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\regular.min.css"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\lib\\font-awesome\\css\\solid.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\solid.css"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\lib\\font-awesome\\css\\solid.min.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\solid.min.css"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\lib\\font-awesome\\css\\svg-with-js.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\svg-with-js.css"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\lib\\font-awesome\\css\\svg-with-js.min.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\svg-with-js.min.css"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\lib\\font-awesome\\css\\v4-font-face.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\v4-font-face.css"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\lib\\font-awesome\\css\\v4-font-face.min.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\v4-font-face.min.css"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\lib\\font-awesome\\css\\v4-shims.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\v4-shims.css"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\lib\\font-awesome\\css\\v4-shims.min.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\v4-shims.min.css"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\lib\\font-awesome\\css\\v5-font-face.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\v5-font-face.css"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\lib\\font-awesome\\css\\v5-font-face.min.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\v5-font-face.min.css"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\lib\\font-awesome\\js\\all.js",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\all.js"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\lib\\font-awesome\\js\\all.min.js",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\all.min.js"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\lib\\font-awesome\\js\\brands.js",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\brands.js"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\lib\\font-awesome\\js\\brands.min.js",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\brands.min.js"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\lib\\font-awesome\\js\\conflict-detection.js",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\conflict-detection.js"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\lib\\font-awesome\\js\\conflict-detection.min.js",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\conflict-detection.min.js"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\lib\\font-awesome\\js\\fontawesome.js",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\fontawesome.js"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\lib\\font-awesome\\js\\fontawesome.min.js",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\fontawesome.min.js"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\lib\\font-awesome\\js\\regular.js",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\regular.js"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\lib\\font-awesome\\js\\regular.min.js",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\regular.min.js"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\lib\\font-awesome\\js\\solid.js",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\solid.js"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\lib\\font-awesome\\js\\solid.min.js",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\solid.min.js"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\lib\\font-awesome\\js\\v4-shims.js",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\v4-shims.js"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\lib\\font-awesome\\js\\v4-shims.min.js",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\v4-shims.min.js"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\lib\\font-awesome\\sprites\\brands.svg",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\sprites\\brands.svg"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\lib\\font-awesome\\sprites\\regular.svg",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\sprites\\regular.svg"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\lib\\font-awesome\\sprites\\solid.svg",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\sprites\\solid.svg"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\lib\\font-awesome\\webfonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\lib\\font-awesome\\webfonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\lib\\font-awesome\\webfonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\lib\\font-awesome\\webfonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\lib\\font-awesome\\webfonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\lib\\font-awesome\\webfonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\lib\\font-awesome\\webfonts\\fa-v4compatibility.ttf",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-v4compatibility.ttf"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\lib\\font-awesome\\webfonts\\fa-v4compatibility.woff2",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-v4compatibility.woff2"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.CiceksepetiApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.CiceksepetiApp.props",
+      "PackagePath": "build\\CiceksepetiApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.CiceksepetiApp.props",
+      "PackagePath": "buildMultiTargeting\\CiceksepetiApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.CiceksepetiApp.props",
+      "PackagePath": "buildTransitive\\CiceksepetiApp.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,93 @@
+@model ICollection<Order>
+
+<head>
+    <link rel="stylesheet" href="~/css/userIndex.css">
+</head>
+
+<div class="centered">
+    <partial name="_navigationMenu" class="navMenu"></partial>
+
+    <section class="order-wrapper">
+        <h3 class="order__header">Siparişlerim</h3>
+        @if (Model.Count().Equals(0))
+        {
+            <div class="orders-wrapper">
+                <i class="fa-solid fa-cart-shopping fa-2xl" style="color: rgb(100, 100, 100);"></i>
+                You haven't placed any orders yet
+                <a class="usergoHome" asp-area="" asp-controller="Home">Alışverişe başla</a>
+            </div>
+        }
+        else
+        {
+            <div class="orders-wrapper">
+                @foreach (var order in Model)
+                {
+                    <div class="order-item">
+                        <div class="item__header">
+                            <div class="date-receiver-total">
+                                <span>Sipariş Tarihi : @order.OrderDate.ToLongDateString()
+                                    @order.OrderDate.ToShortTimeString()</span>
+                                <span>Alıcı : @order.ReceiverName</span>
+                                <span>Toplam Tutar : @order.Items.Sum(line => line.Product.DiscountedPrice ??
+                            line.Product.UnitPrice)</span>
+                            </div>
+                            <a class="detail-button" asp-area="User" asp-controller="Order" asp-action="Get"
+                                asp-route-id="@order.OrderID">Detay</a>
+                        </div>
+                        <div class="item__info">
+                            <div class="product_images">
+                                @foreach (var line in order.Items)
+                                {
+                                    <img style="width:75px; aspect-ratio: 1; border-radius: .5rem"
+                                        src="@(line.Product.ImageURL ?? "/images/default.png")" alt="...">
+                                }
+                            </div>
+                            <div>
+                                <div>Ürün Adedi : @order.Items.Count()</div>
+                                <div>Sipariş Statüsü :
+                                    @if (order.Completed is true)
+                                    {
+                                        <span class="order-complete">
+                                            <i class="fa-solid fa-circle-check"></i>
+                                            Tamamlandı
+                                        </span>
+                                    }
+                                    else if (order.Shipped is true)
+                                    {
+                                        <span class="order-ship">
+                                            <i class="fa-solid fa-truck-fast fa-fade"></i>
+                                            Kargoya verildi
+                                        </span>
+                                    }
+                                    else if (order.Received is true)
+                                    {
+                                        <span class="order-ready">
+                                            <i class="fa-solid fa-hourglass-half fa-spin"></i>
+                                            Hazırlanıyor
+                                        </span>
+                                    }
+                                </div>
+
+                            </div>
+                            <div>
+                                @if (order.Shipped is true)
+                                {
+                                    <button class="update-button" type="button" disabled>
+                                        Güncelle
+                                    </button>
+                                }
+                                else
+                                {
+                                    <button class="update-button" type="button">
+                                        <a asp-area="User" asp-controller="Order" asp-action="Update" asp-route-id="@order.OrderID"
+                                            class="order-update">Güncelle</a>
+                                    </button>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+    </section>
+</div>

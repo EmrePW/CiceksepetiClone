@@ -1,0 +1,89 @@
+@model Order
+
+<head>
+    <link rel="stylesheet" href="~/css/orderAll.css">
+</head>
+
+<div class="error-section" asp-validation-summary="All"></div>
+
+<form class="myForm" asp-action="Index" method="POST">
+    <h2>Recipient Information</h2>
+    <input type="hidden" asp-for="Customer" value="">
+    <div class="form-area recipent">
+        <div class="name__phone">
+            <input type="text" asp-for="ReceiverName" placeholder="Alıcı Adı Soyadı" id="ReceiverName">
+            <input type="text" asp-for="PhoneNumber" placeholder="Telefon Numarası" id="PhoneNumber">
+        </div>
+        <div class="address">
+            <select class="select" asp-for="City">
+                <option value="TRABZON">Trabzon</option>
+                <option value="ERZURUM">Erzurum</option>
+                <option value="ANKARA">Ankara</option>
+                <option value="ISTANBUL">İstanbul</option>
+                <option value="IZMIR">İzmir</option>
+                <option value="ANTALYA">Antalya</option>
+            </select>
+            <textarea asp-for="Line1" class="textarea" cols="30" rows="10"
+                placeholder="Mahalle, Cadde/Sokak, Numara, Bina No"></textarea>
+        </div>
+    </div>
+    <h2>Invoice Information</h2>
+    <div class="form-area invoice">
+        <div class="invoice__type">
+            <div class="input-field">
+                <label asp-for="InvoiceType">Kişi adına</label>
+                <input type="radio" asp-for="InvoiceType" value="Kişi">
+            </div>
+            <div class="input-field">
+                <label asp-for="InvoiceType">Şirket Adına</label>
+                <input type="radio" asp-for="InvoiceType" value="Şirket">
+            </div>
+        </div>
+        <div class="invoice__address">
+            <label asp-for="InvoiceAddress">Fatura Adresi</label>
+            <textarea asp-for="InvoiceAddress" class="textarea" cols="30" rows="10"
+                placeholder="Fatura Adresi. Teslimat adresi ile aynı olması için boş bırakınız."></textarea>
+        </div>
+    </div>
+    <h2>Card Information</h2>
+    <div class="form-area card">
+        <div class="card__number">
+            <input type="text" id="cardNumber" asp-for="CardNumber" placeholder="Kart Numarası" maxlength="12">
+        </div>
+        <div class="exp__cvc">
+            <select class="select" asp-for="CardExpirationMonth">
+                <option value="1">01</option>
+                <option value="2">02</option>
+                <option value="3">03</option>
+                <option value="4">04</option>
+                <option value="5">05</option>
+                <option value="6">06</option>
+                <option value="7">07</option>
+                <option value="8">08</option>
+                <option value="9">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+            <select class="select" asp-for="CardExpirationYear">
+                @for (int year = DateTime.Now.Year; year <= DateTime.Now.AddYears(10).Year; year++)
+                {
+                    <option value="@year">@year</option>
+                }
+            </select>
+            <div class="card__cvc">
+                <input type="text" id="cardCVC" asp-for="CardCVC" placeholder="CVC" maxlength="3" minlength="3">
+            </div>
+        </div>
+    </div>
+    <div class="submitArea">
+        <button type="submit" class="btn button-submit">
+            <i class="fa-solid fa-arrow-right"></i>
+            Proceed
+        </button>
+        <a asp-controller="Home" class="btn go_home">
+            <i class="fa-solid fa-house"></i>
+            Go Back to home
+        </a>
+    </div>
+</form>

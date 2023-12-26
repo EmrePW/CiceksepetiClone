@@ -1,0 +1,17 @@
+D:\skool\5th Half-Year\DBMS\Ciceksepeti\Services\bin\Debug\net6.0\Services.deps.json
+D:\skool\5th Half-Year\DBMS\Ciceksepeti\Services\bin\Debug\net6.0\Services.dll
+D:\skool\5th Half-Year\DBMS\Ciceksepeti\Services\bin\Debug\net6.0\Services.pdb
+D:\skool\5th Half-Year\DBMS\Ciceksepeti\Services\obj\Debug\net6.0\Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\skool\5th Half-Year\DBMS\Ciceksepeti\Services\obj\Debug\net6.0\Services.AssemblyInfoInputs.cache
+D:\skool\5th Half-Year\DBMS\Ciceksepeti\Services\obj\Debug\net6.0\Services.AssemblyInfo.cs
+D:\skool\5th Half-Year\DBMS\Ciceksepeti\Services\obj\Debug\net6.0\Services.csproj.CoreCompileInputs.cache
+D:\skool\5th Half-Year\DBMS\Ciceksepeti\Services\obj\Debug\net6.0\Services.dll
+D:\skool\5th Half-Year\DBMS\Ciceksepeti\Services\obj\Debug\net6.0\refint\Services.dll
+D:\skool\5th Half-Year\DBMS\Ciceksepeti\Services\obj\Debug\net6.0\Services.pdb
+D:\skool\5th Half-Year\DBMS\Ciceksepeti\Services\obj\Debug\net6.0\ref\Services.dll
+D:\skool\5th Half-Year\DBMS\Ciceksepeti\Services\bin\Debug\net6.0\Entities.dll
+D:\skool\5th Half-Year\DBMS\Ciceksepeti\Services\bin\Debug\net6.0\Entities.pdb
+D:\skool\5th Half-Year\DBMS\Ciceksepeti\Services\obj\Debug\net6.0\Services.csproj.AssemblyReference.cache
+D:\skool\5th Half-Year\DBMS\Ciceksepeti\Services\obj\Debug\net6.0\Services.csproj.CopyComplete
+D:\skool\5th Half-Year\DBMS\Ciceksepeti\Services\bin\Debug\net6.0\Repositories.dll
+D:\skool\5th Half-Year\DBMS\Ciceksepeti\Services\bin\Debug\net6.0\Repositories.pdb

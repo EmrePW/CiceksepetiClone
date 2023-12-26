@@ -1,0 +1,41 @@
+<head>
+    <link rel="stylesheet" href="~/css/corporateHeader.css">
+</head>
+
+<div class="logo">
+    <a asp-controller="Dashboard" asp-action="Index"><img src="~/images/logo-corporate.png" alt=""></a>
+</div>
+<nav class="navigation">
+    <ul class="navigation-nav">
+        <li class="navigation-item">
+            <a class="navigation-link" asp-area="Corporate" asp-controller="Product" asp-action="Index">
+                <i class="fa-solid fa-circle-info"></i>
+                All Products
+            </a>
+        </li>
+        <li class="navigation-item">
+            <a class="navigation-link" asp-area="Corporate" asp-controller="Order" asp-action="Index">
+                <i class="fa-solid fa-truck-fast"></i>
+                All Orders
+            </a>
+        </li>
+    </ul>
+    <ul class="navigation-nav">
+        <li class="navigation-item">
+            <a class="navigation-link" asp-area="" asp-controller="Home" asp-action="Index">
+                <i class="fa-solid fa-globe"></i>
+                Web
+            </a>
+        </li>
+        <li class="navigation-item">
+            <a class="navigation-link" asp-area="" asp-controller="Account" asp-action="Logout">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                Logout
+            </a>
+        </li>
+    </ul>
+</nav>
+@* <div class="greeting">
+<h1>Hello @User?.Identity?.Name</h1>
+<h2>@DateTime.Now.ToLongTimeString() @DateTime.Now.ToLongDateString()</h2>
+</div> *@

@@ -1,0 +1,30 @@
+@model Product
+
+<head>
+
+    <link rel="stylesheet" href="~/css/reset.css">
+    <link rel="stylesheet" href="~/css/productCard.css">
+</head>
+
+<a asp-controller="Product" asp-action="get" asp-route-id="@Model.ProductID" class="productCard">
+    <div class="product_img">
+        <img src="@(Model.ImageURL ?? "/images/default.png")" alt="">
+    </div>
+    <div class="product_info">
+
+        <div class="product_name">@Model.ProductName</div>
+        <div class="ratings">@Model.RatingCount</div>
+        <div class="price">
+            @if (@Model.DiscountedPrice is null)
+            {
+                <p class="normal_price">@Model.UnitPrice TL</p>
+            }
+            else
+            {
+                <div class="product_discount">%@((int)(100 - (100 * Model.DiscountedPrice) / Model.UnitPrice))</div>
+                <div class="product_price">@Model.UnitPrice TL</div>
+                <div class="product_discounted_price">@Model.DiscountedPrice TL</div>
+            }
+        </div>
+    </div>
+</a>

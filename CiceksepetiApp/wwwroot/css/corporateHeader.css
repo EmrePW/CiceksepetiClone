@@ -1,0 +1,39 @@
+:root {
+  --clr-hover: hsl(240, 100%, 67%);
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 90%;
+  margin-block: 1rem;
+}
+
+.navigation-nav {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.navigation-item {
+  border-bottom: 2px solid var(--clr-secondary);
+  transition: border-color 0.2s;
+}
+.navigation-item:hover {
+  border-bottom: 2px solid var(--clr-hover);
+}
+
+.navigation-item:hover > .navigation-link {
+  color: var(--clr-hover);
+}
+
+.navigation-link {
+  padding: 0.5rem 1.5rem;
+
+  text-decoration: none;
+  color: var(--clr-secondary);
+}

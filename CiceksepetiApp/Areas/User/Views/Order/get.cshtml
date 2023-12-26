@@ -1,0 +1,104 @@
+@model Order
+
+<head>
+    <link rel="stylesheet" href="~/css/userIndex.css">
+    <link rel="stylesheet" href="~/css/userOrderGet.css">
+</head>
+
+<div class="centered">
+    <partial name="_navigationMenu" class="navMenu"></partial>
+
+    <section class="order-wrapper">
+        <div class="order-item">
+            <div class="item__header">
+                <div class="date-recevier-total">
+                    <div>Sipariş Tarihi : @Model.OrderDate.ToLongDateString()
+                        @Model.OrderDate.ToShortTimeString()</div>
+                    <div>Takip no : @Model.trackingNumber</div>
+                    <div>Alıcı : @Model.ReceiverName</div>
+                    <div>Toplam Tutar : @Model.Items.Sum(line => line.Product.DiscountedPrice ??
+                        line.Product.UnitPrice)</div>
+                </div>
+                <div class="orderstates">
+                    @if (Model.Received is true)
+                    {
+                        <div class="state elapsed">
+                            <i class="fa-solid fa-basket-shopping fa-2xl"></i>
+                            Sipariş Alındı
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="state">
+                            <i class="fa-solid fa-basket-shopping fa-2xl"></i>
+                            Sipariş Alındı
+                        </div>
+                    }
+
+                    @if (Model.Accepted is true)
+                    {
+                        <div class="state elapsed">
+                            <i class="fa-solid fa-hourglass-end fa-2xl"></i>
+                            Hazırlanıyor
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="state">
+                            <i class="fa-solid fa-hourglass-half fa-spin fa-2xl"></i>
+                            Hazırlanıyor
+                        </div>
+                    }
+
+                    @if (Model.Shipped is true)
+                    {
+                        <div class="state elapsed">
+                            <i class="fa-solid fa-truck-fast fa-2xl"></i>
+                            Kargoya Verildi
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="state">
+                            <i class="fa-solid fa-truck-moving fa-2xl"></i>
+                            Kargoya Verildi
+                        </div>
+
+                    }
+                    @if (Model.Completed is true)
+                    {
+                        <div class="state elapsed">
+                            <i class="fa-solid fa-check fa-2xl"></i>
+                            Completed
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="state">
+                            <i class="fa-solid fa-check fa-2xl"></i>
+                            Completed
+                        </div>
+                    }
+                </div>
+            </div>
+            <div class="item__info">
+                @foreach (var line in Model.Items)
+                {
+                    <div class="line">
+                        <div class="line-image">
+                            <img style="width:75px; aspect-ratio: 1; border-radius: .5rem"
+                                src="@(line.Product.ImageURL ?? "/images/default.png")" alt="...">
+                        </div>
+                        <div class="line-info">
+                            <div>Sipariş No : @line.CartlineID</div>
+                            <div>Şirket : @line.Company.CompanyName</div>
+                            <div>Ürün İsmi : <a class="product-link" asp-area="" asp-controller="Product" asp-action="Get"
+                                    asp-route-id="@line.Product.ProductID"> @line.Product.ProductName</a></div>
+                            <div>İstenilen Teslim Tarihi : @line.DeliverDate @line.DeliverTime @line.DeliverCity</div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </section>
+</div>

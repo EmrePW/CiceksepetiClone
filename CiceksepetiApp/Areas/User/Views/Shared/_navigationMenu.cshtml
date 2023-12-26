@@ -1,0 +1,52 @@
+<head>
+    <link rel="stylesheet" href="~/css/userNavigationMenu.css">
+</head>
+
+<nav class="nav-wrap">
+    <ul class="user-navbar">
+        <li class="user-navbar__item">
+            <a class="user-navbar__link" asp-area="User" asp-controller="Dashboard" asp-action="Index">
+                <i class="fa-solid fa-truck-front"></i>
+                Siparişlerim
+            </a>
+        </li>
+        <li class="user-navbar__item">
+            <a class="user-navbar__link" asp-area="User" asp-controller="Dashboard" asp-action="Favourites">
+                <i class="fa-regular fa-heart"></i>
+                Favorilerim
+            </a>
+        </li>
+        <li class="user-navbar__item">
+            <a class="user-navbar__link" asp-area="User" asp-controller="Dashboard" asp-action="Ratings">
+                <i class="fa-regular fa-star"></i>
+                Değerlendirmelerim
+            </a>
+        </li>
+        <li class="user-navbar__item">
+            <a class="user-navbar__link" asp-area="User" asp-controller="Dashboard" asp-action="ChangePassword">
+                <i class="fa-solid fa-key"></i>
+                Şifre Değiştir
+            </a>
+        </li>
+        @if (User.IsInRole("Admin"))
+        {
+            <li class="user-navbar__item">
+                <a class="user-navbar__link" asp-area="Admin" asp-controller="Dashboard" asp-action="Index">
+                    <i class="fa-solid fa-gear"></i>
+                    Admin Panel
+                </a>
+            </li>
+        }
+        @if (User.IsInRole("Corporate"))
+        {
+            <li class="user-navbar__item">
+                <a class="user-navbar__link" asp-area="Corporate" asp-controller="Dashboard" asp-action="Index">
+                    <i class="fa-solid fa-cash-register"></i>
+                    Şirket Paneli
+                </a>
+            </li>
+        }
+
+
+    </ul>
+</nav>

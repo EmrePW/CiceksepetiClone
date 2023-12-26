@@ -1,0 +1,44 @@
+.home_index_grid_area {
+  width: min(95%, 85rem);
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(13, 1fr);
+  grid-gap: 1rem;
+  margin-top: 2rem;
+}
+
+.categoryText {
+  text-decoration: none;
+  font-size: 3rem;
+  color: var(--clr-secondary);
+}
+
+.area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+  border-radius: 1rem;
+  transition: box-shadow 0.3s;
+}
+
+.area:hover {
+  -webkit-box-shadow: 0px 0px 17px 12px rgba(61, 61, 61, 1);
+  -moz-box-shadow: 0px 0px 17px 12px rgba(61, 61, 61, 1);
+  box-shadow: 0px 0px 17px 12px rgba(61, 61, 61, 1);
+}
+
+.area1 {
+  grid-column: 1 / 4;
+  height: 17.125rem;
+  background-image: url("../images/flower.png");
+  background-size: 100% 100%;
+  background-position: center;
+}
+.area2 {
+  grid-column: 4 / 7;
+  height: 17.125rem;
+  background-image: url("../images/bonnyfood.png");
+  background-size: 100% 100%;
+  background-position: center;
+}

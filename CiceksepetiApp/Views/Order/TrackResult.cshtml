@@ -1,0 +1,80 @@
+@model Order
+
+<head>
+    <link rel="stylesheet" href="~/css/orderTrackResult.css">
+</head>
+
+<div class="centered">
+    <div class="orderstates">
+        @if (Model.Received is true)
+        {
+            <div class="state elapsed">
+                <i class="fa-solid fa-basket-shopping fa-2xl"></i>
+                Sipariş Alındı
+            </div>
+        }
+        else
+        {
+            <div class="state">
+                <i class="fa-solid fa-basket-shopping fa-2xl"></i>
+                Sipariş Alındı
+            </div>
+        }
+
+        @if (Model.Accepted is true)
+        {
+            <div class="state elapsed">
+                <i class="fa-solid fa-hourglass-end fa-2xl"></i>
+                Hazırlanıyor
+            </div>
+        }
+        else
+        {
+            <div class="state">
+                <i class="fa-solid fa-hourglass-half fa-spin fa-2xl"></i>
+                Hazırlanıyor
+            </div>
+        }
+
+        @if (Model.Shipped is true)
+        {
+            <div class="state elapsed">
+                <i class="fa-solid fa-truck-fast fa-2xl"></i>
+                Kargoya Verildi
+            </div>
+        }
+        else
+        {
+            <div class="state">
+                <i class="fa-solid fa-truck-moving fa-2xl"></i>
+                Kargoya Verildi
+            </div>
+
+        }
+        @if (Model.Completed is true)
+        {
+            <div class="state elapsed">
+                <i class="fa-solid fa-check fa-2xl"></i>
+                Completed
+            </div>
+        }
+        else
+        {
+            <div class="state">
+                <i class="fa-solid fa-check fa-2xl"></i>
+                Completed
+            </div>
+        }
+    </div>
+    <div class="orderInfo">
+        <div class="deliverInfo">
+            <div>Sipariş no : @Model.trackingNumber</div>
+            <div>Alıcı İsmi : @Model.ReceiverName</div>
+            <div class="">Adres : @Model.City @Model.Line1</div>
+        </div>
+        <div class="paymentInfo">
+            <div class="">Toplam Ücret :
+                @Model.Items.Sum(line => line.Product.DiscountedPrice ?? line.Product.UnitPrice)</div>
+            <div class="">Kargo Ücreti : 0</div>
+        </div>
+    </div>

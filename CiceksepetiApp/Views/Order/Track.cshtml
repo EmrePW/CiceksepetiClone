@@ -1,0 +1,13 @@
+<head>
+    <link rel="stylesheet" href="~/css/orderTrack.css">
+</head>
+
+<div class="centered">
+    <form asp-action="TrackResult" method="POST" class="trackForm">
+        <h2 class="trackHeader">Sipariş Takibi</h2>
+        <input type="text" name="trackingNumber" id="trackNumber" placeholder="Takip numarası">
+        <button type="submit" class="trackSubmit">
+            Sipariş Takip
+        </button>
+    </form>
+</div>

@@ -1,0 +1,113 @@
+<div class="wrap">
+    <div class="first">
+        <div class="logo">
+            <a href="/">
+                <img src="~/images/logo.png" alt="">
+            </a>
+        </div>
+        <div class="search">
+            <div class="search-field">
+                <input type="text" name="searchTerm" id="input-mainSearch"
+                    placeholder="Search brand, product or category">
+                <a href="" class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+            </div>
+        </div>
+        <nav class="navigation">
+            <ul class="navbar-nav">
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <li class="navbar-item">
+                        <a class="nav-link clr-secondary" aria-current="page" asp-area="User" asp-controller="Dashboard"
+                            asp-action="Favourites">
+                            <i class="fa-solid fa-heart"></i>
+                            Favorilerim
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="nav-link clr-secondary" asp-area="User" asp-controller="Dashboard" asp-action="Index">
+                            <i class="fa-solid fa-truck-moving"></i>
+                            Siparişlerim
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="nav-link clr-secondary" aria-current="page" asp-area="User" asp-controller="Dashboard"
+                            asp-action="Index" asp-action="Index">
+                            <i class="fa-solid fa-user"></i>
+                            Hesabım
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="nav-link clr-secondary" asp-area="" asp-controller="Account" asp-action="Logout">
+                            Çıkış Yap
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                        </a>
+                    </li>
+                }
+                else
+                {
+                    <li class="navbar-item">
+                        <a class="nav-link clr-secondary" asp-area="" asp-controller="Order" asp-action="Track">
+                            <i class="fa-solid fa-truck-moving"></i>
+                            Sipariş Takibi
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="nav-link clr-secondary" asp-area="" asp-controller="Account" asp-action="Login">
+                            <i class="fa-solid fa-user"></i>
+                            Üyelik
+                        </a>
+                    </li>
+                }
+                <li class="navbar-item">
+                    <a class="nav-link clr-secondary cart" asp-page="/cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="second">
+        <nav>
+            <ul class="sticky-categories-nav">
+                <li class="sticky-navbar-item">
+                    <a asp-area="" asp-controller="Category" asp-action="Flower" class="sticky-nav-link clr-secondary">
+                        Çiçek
+                    </a>
+                </li>
+                <li class="sticky-navbar-item">
+                    <a asp-area="" asp-controller="Category" asp-action="Bonnyfood"
+                        class="sticky-nav-link clr-secondary">
+                        Çikolata
+                    </a>
+                </li>
+                <li class="sticky-navbar-item">
+                    <a href="#" class="sticky-nav-link clr-secondary">
+                        Doğum Günü
+                    </a>
+                </li>
+                <li class="sticky-navbar-item">
+                    <a href="#" class="sticky-nav-link clr-secondary">
+                        Gönderim Amacı
+                    </a>
+                </li>
+                <li class="sticky-navbar-item">
+                    <a href="#" class="sticky-nav-link clr-secondary">
+                        Saksı Çiçekleri
+                    </a>
+                </li>
+                <li class="sticky-navbar-item">
+                    <a href="#" class="sticky-nav-link clr-secondary">
+                        Hediye
+                    </a>
+                </li>
+                <li class="sticky-navbar-item">
+                    <a href="#" class="sticky-nav-link clr-secondary">
+                        Yılbaşı
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>

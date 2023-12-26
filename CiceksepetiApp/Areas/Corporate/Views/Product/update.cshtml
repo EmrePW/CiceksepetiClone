@@ -1,0 +1,54 @@
+@model ProductDtoForUpdate
+
+<head>
+    <link rel="stylesheet" href="~/css/corporateProductCreate.css">
+</head>
+
+<div class="centered">
+    <div asp-validation-summary="All"></div>
+    <div class="product-info">
+        <div class="image">
+            <img src="@(Model.ImageURL ?? "/images/default.png")" alt="">
+        </div>
+        <div class="name">
+            <h2>@Model.ProductName</h2>
+        </div>
+    </div>
+    <form asp-action="Update" class="updateForm" enctype="multipart/form-data">
+        <!-- I am  ashamed of this -->
+        <input type="hidden" asp-for="ProductID" value="@Model.ProductID">
+        <input type="hidden" asp-for="CategoryID" value="@Model.CategoryID">
+        <input type="hidden" asp-for="CompanyID" value="@Model.CompanyID">
+        <input type="hidden" asp-for="ProductName" value="@Model.ProductName">
+        <input type="hidden" asp-for="SuperCategory" value="@Model.SuperCategory">
+        <input type="hidden" asp-for="ImageURL" value="@Model.ImageURL">
+        <div class="createForm__area">
+            <label asp-for="UnitPrice">Fiyat düzenle</label>
+            <input type="text" asp-for="UnitPrice">
+        </div>
+        <div class="createForm__area">
+            <label asp-for="Summary">Özet düzenle</label>
+            <input type="text" asp-for="Summary">
+        </div>
+        <div class="createForm__area">
+            <label asp-for="DiscountedPrice">İndirimli Fiyat</label>
+            <input type="text" asp-for="DiscountedPrice">
+        </div>
+        <div class="createForm__area">
+            <label asp-for="UnitsInStock">Stoktaki Miktar</label>
+            <input type="text" asp-for="UnitsInStock">
+        </div>
+        <div class="createForm__area">
+            <label asp-for="FreeShip">Bedava Kargo</label>
+            <input type="checkbox" asp-for="FreeShip">
+        </div>
+        <div class="createForm__area">
+            <label asp-for="ImageURL">Image</label>
+            <input type="file" name="file" id="">
+
+        </div>
+        <div class="createForm__area">
+            <button class="create-submit" type="submit">Güncelle</button>
+        </div>
+    </form>
+</div>

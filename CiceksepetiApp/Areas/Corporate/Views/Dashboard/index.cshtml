@@ -1,0 +1,60 @@
+<head>
+    <link rel="stylesheet" href="~/css/corporateIndex.css">
+</head>
+
+<div class="greeting">
+    <h1>Hello @User?.Identity?.Name</h1>
+    <h2>The Time is @DateTime.Now.ToShortTimeString() @DateTime.Now.ToLongDateString()</h2>
+</div>
+
+<div class="index-wrapper">
+    <div class="products">
+        <div class="general-info">
+            <div class="info-card">
+                <h5>Total Product Count</h5>
+                @ViewBag.ProductCount
+            </div>
+            <div class="info-card">
+                <h5>Average Ratings</h5>
+                @(ViewBag.AverageRating ?? "NULL")
+            </div>
+        </div>
+        <div class="all-products">
+            @foreach (var prd in ViewBag.Products)
+            {
+                <partial name="_productCard" model="prd"></partial>
+            }
+        </div>
+    </div>
+
+    <div class="orders">
+        <div class="general-info">
+            <div class="info-card">
+                <h5>Bekleyen Sipariş</h5>
+                @ViewBag.PendingOrders
+            </div>
+            <div class="info-card">
+                <h5>Total Profit</h5>
+                @ViewBag.TotalProfit
+            </div>
+        </div>
+
+        <div class="all-orders">
+            @if (ViewBag.lines_with_orders.Count.Equals(0))
+            {
+                <div>
+                    <div><i class="fa-solid fa-moon fa-2xl"></i></div>
+                    There are no orders yet. You can rest for now...
+                </div>
+            }
+            @foreach (var line in ViewBag.lines_with_orders)
+            {
+                <div class="order-item">
+                    <partial name="_orderCard" model="line"></partial>
+                </div>
+            }
+
+        </div>
+
+    </div>
+</div>

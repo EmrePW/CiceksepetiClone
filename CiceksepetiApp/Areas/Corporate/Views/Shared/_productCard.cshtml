@@ -1,0 +1,38 @@
+@model Product
+
+<head>
+    <link rel="stylesheet" href="~/css/corporateProductCard.css">
+</head>
+
+<div class="card">
+    <div class="card-image">
+        <img class="product-image" src="@(Model.ImageURL ?? "/images/default.png")" alt="...">
+        @* <div style="background-color: red; width:100%; aspect-ratio : 1; border-radius: .5rem .5rem 0 0"></div> *@
+    </div>
+    <div class="info-wrapper">
+        <div class="card-info">
+            <h4 class="product-name">
+                @Model.ProductName
+            </h4>
+            <p class="product-price">Birim Fiyat : @Model.UnitPrice</p>
+            @if (Model.DiscountedPrice is not null)
+            {
+                <p class="product-price">İndirimli Fiyat : @(Model.DiscountedPrice.ToString())</p>
+            }
+            <p class="product-unitsInStock">Stoktaki ürün miktarı :
+                @(Model.UnitsInStock.Equals(0) || Model.UnitsInStock is null ? "N/A" : Model.UnitsInStock)
+
+        </div>
+        <div class="card-buttons">
+            <a asp-area="" asp-controller="Product" asp-action="Get" asp-route-id="@Model.ProductID" class="button web">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                View in Web
+            </a>
+            <a asp-area="Corporate" asp-controller="Product" asp-action="Update" asp-route-id="@Model.ProductID"
+                class="button update">
+                <i class="fa-solid fa-gear"></i>
+                Update Product
+            </a>
+        </div>
+    </div>
+</div>

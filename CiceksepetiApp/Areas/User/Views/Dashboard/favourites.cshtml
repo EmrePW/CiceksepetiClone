@@ -1,0 +1,39 @@
+@model IEnumerable<Product>
+
+<head>
+    <link rel="stylesheet" href="~/css/userIndex.css">
+    <link rel="stylesheet" href="~/css/userFavourites.css">
+</head>
+
+<div class="centered">
+    <partial name="_navigationMenu" class="navMenu"></partial>
+
+    <section class="items-wrapper">
+        <h3 class="order__header">Favorilerim</h3>
+        @if (Model.Count().Equals(0))
+        {
+            <div class="orders-wrapper">
+                <i class="fa-solid fa-heart fa-2xl" style="color: #ff0000;"></i>
+                You haven't liked any products yet
+            </div>
+        }
+        else
+        {
+            <div class="items">
+                @foreach (var item in Model)
+                {
+                    <div class="item-wrapper">
+                        <div class="item-image">
+                            @* <img src="@item.ImageURL" alt="Image not found"> *@
+                            <div style="width:75px; aspect-ratio: 1; border-radius: .5rem; background-color:red;"></div>
+                        </div>
+                        <div class="item-name">
+                            <a class="item-name-link" asp-area="" asp-controller="Product" asp-action="Get"
+                                asp-route-id="@item.ProductID">@item.ProductName</a>
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+    </section>
+</div>

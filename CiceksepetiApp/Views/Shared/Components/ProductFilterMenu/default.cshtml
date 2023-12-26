@@ -1,0 +1,28 @@
+<head>
+    <link rel="stylesheet" href="~/css/productFilterMenu.css">
+</head>
+
+<div class="filter-header">
+    <i class="fa fa-filter"></i>
+    <h3>Filters</h3>
+</div>
+
+<form id="myForm" asp-action='@ViewContext.RouteData.Values["action"]' method="GET">
+    <div class="form-area">
+        <label for="kwargs">Keyword</label>
+        <input type="text" name="searchKeyword" id="kwargs">
+    </div>
+    <div class="form-area price-filter">
+        <div>
+            <label for="min-price">Min Price</label>
+            <input type="text" name="MinPrice" id="min-price">
+        </div>
+        <div>
+            <label for="max-price">Max Price</label>
+            <input type="text" name="MaxPrice" id="max-price">
+        </div>
+    </div>
+    <div class="form-area">
+        <button type="submit" id="filter-button">Filter</button>
+    </div>
+</form>

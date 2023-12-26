@@ -1,0 +1,32 @@
+.centered {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-block: 2rem;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.item-wrapper {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  border: 2px solid var(--clr-divider);
+  border-radius: 0.5rem;
+  gap: 1rem;
+}
+
+.items-wrapper {
+  flex-basis: 75%;
+}
+.item-name-link {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  color: var(--clr-secondary);
+}

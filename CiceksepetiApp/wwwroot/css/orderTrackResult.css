@@ -1,0 +1,56 @@
+:root {
+  --clr-primary: hsl(18, 89%, 51%);
+  --clr-secondary: hsl(0, 0%, 90%);
+  --clr-hover: hsl(240, 100%, 67%);
+  --clr-divider: hsl(0, 0%, 12%);
+  --clr-bg: hsl(0, 0%, 8%);
+  --clr-wait: hsl();
+}
+
+body {
+  color: white;
+}
+.centered {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.state {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 8rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 2px solid var(--clr-primary);
+  background-color: var(--clr-divider);
+  color: var(--clr-primary);
+}
+
+.elapsed {
+  background-color: var(--clr-primary);
+  color: var(--clr-secondary);
+}
+
+.orderstates {
+  display: flex;
+  gap: 5rem;
+  margin-block: 2rem;
+}
+
+.orderInfo {
+  display: flex;
+  gap: 1rem;
+}
+
+.orderInfo > div {
+  width: 30rem;
+  flex-basis: 100%;
+  background-color: var(--clr-divider);
+  color: var(--clr-secondary);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}

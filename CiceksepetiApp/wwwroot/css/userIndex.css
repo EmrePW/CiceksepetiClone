@@ -1,0 +1,145 @@
+:root {
+  --clr-update: hsl(130, 65%, 40%);
+  --clr-ready: rgb(255, 153, 51);
+  --clr-shipped: rgb(26, 110, 255);
+}
+
+.centered {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-block: 2rem;
+}
+
+.nav-wrap {
+  flex-basis: 20%;
+}
+
+.order-wrapper {
+  flex-basis: 80%;
+}
+
+.order__header {
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--clr-divider);
+}
+
+.orders-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.orders-wrapper > svg {
+  font-size: 5em;
+}
+
+.usergoHome {
+  text-decoration: none;
+  padding: 1rem 2rem;
+  background: linear-gradient(
+    90deg,
+    rgba(181, 72, 25, 1) 0%,
+    rgba(241, 86, 19, 1) 0%
+  );
+  color: var(--clr-secondary);
+  border-radius: 2rem;
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+
+.usergoHome:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(181, 72, 25, 1) 0%,
+    rgba(241, 86, 19, 1) 100%
+  );
+}
+
+.order-item {
+  width: 100%;
+  border: 2px solid var(--clr-divider);
+  border-radius: 0.5rem;
+}
+
+.item__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0.75rem;
+  background-color: var(--clr-divider);
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+.date-receiver-total {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.875rem;
+}
+
+.detail-button {
+  text-decoration: none;
+  padding: 0.5rem 2rem;
+  outline: 2px solid var(--clr-primary);
+  border-radius: 0.5rem;
+  color: var(--clr-secondary);
+}
+
+.detail-button:hover {
+  outline: 3px solid var(--clr-primary);
+}
+
+.item__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.product_images {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.order-update {
+  text-decoration: none;
+  color: var(--clr-secondary);
+}
+
+.order-complete {
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--clr-update);
+  color: hsl(130, 65%, 20%);
+}
+
+.order-ship {
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--clr-shipped);
+}
+
+.order-ready {
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--clr-ready);
+  color: black;
+}
+
+.update-button {
+  cursor: pointer;
+  padding: 0.5rem 2rem;
+  border: 0;
+  border-radius: 0.5rem;
+  color: var(--clr-secondary);
+  background-color: var(--clr-update);
+}
+
+.update-button:disabled {
+  cursor: not-allowed;
+  background-color: grey;
+}

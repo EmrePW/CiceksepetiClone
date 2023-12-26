@@ -1,0 +1,16 @@
+@model IEnumerable<Category>
+
+<head>
+    <link asp-append-version="true" rel="stylesheet" href="~/css/reset.css">
+    <link asp-append-version="true" rel="stylesheet" href="~/css/categoryIndex.css">
+</head>
+
+<div class="categories">
+    @foreach (var category in Model)
+    {
+        @if (category.SuperCategory == 0)
+        {
+            <partial name="_categoryCard" model="category"></partial>
+        }
+    }
+</div>

@@ -1,0 +1,171 @@
+.error-section {
+  margin-top: 2rem;
+  border: 2px solid red;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  color: red;
+  text-align: center;
+}
+
+.error-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.myForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="text"] {
+  width: 32vh;
+  padding: 0.5rem 0.75rem;
+  background-color: var(--clr-divider);
+  border: 2px solid var(--clr-secondary);
+  border-radius: 0.5rem;
+  color: var(--clr-secondary);
+  transition: 0.2s;
+}
+
+input::placeholder {
+  color: var(--clr-secondary);
+  font-size: 1rem;
+}
+
+input:focus {
+  outline: 0;
+  border: 2px solid var(--clr-primary);
+}
+
+label {
+  color: var(--clr-secondary);
+}
+
+h2 {
+  color: var(--clr-secondary);
+  margin-block: 1rem;
+  padding-left: 1rem;
+  align-self: flex-start;
+}
+
+.textarea {
+  width: 100%;
+  height: 10rem;
+  background-color: var(--clr-divider);
+  border: 2px solid var(--clr-secondary);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  color: var(--clr-secondary);
+  transition: border 0.3s;
+}
+
+.textarea::placeholder {
+  color: var(--clr-secondary);
+  font-size: 0.75rem;
+}
+
+.textarea:focus {
+  outline: 0;
+  border: 3px solid var(--clr-primary);
+}
+
+.form-area {
+  display: flex;
+  justify-content: center;
+  width: max(80%, 75rem);
+  border: 2px solid white;
+  padding: 1rem;
+}
+
+.form-area + .form-area {
+  margin-bottom: 1rem;
+}
+
+.name__phone {
+  display: flex;
+  flex-direction: column;
+}
+
+.select {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 0.5rem;
+  background-color: var(--clr-divider);
+  color: white;
+  border: 2px solid white;
+  border-radius: 0.5rem;
+}
+
+.select:focus {
+  outline: 0;
+  border: 2px solid var(--clr-primary);
+}
+
+.recipent {
+  gap: 2rem;
+}
+
+.name__phone {
+  gap: 1rem;
+}
+
+.invoice {
+  gap: 1rem;
+}
+
+.input-field {
+  display: flex;
+  width: 10rem;
+  justify-content: space-between;
+}
+
+.input-field > input[type="radio"] {
+  width: 1em;
+  aspect-ratio: 1;
+}
+
+.card {
+  flex-direction: column;
+  align-items: center;
+}
+
+.card__number {
+  text-align: center;
+  width: 50%;
+  margin-bottom: 1rem;
+}
+
+.exp__cvc {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.card .select {
+  width: 7.5rem;
+}
+
+#cardCVC {
+  width: 5rem;
+}
+
+.submitArea {
+  width: 35%;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-block: 2rem;
+}
+
+.btn {
+  cursor: pointer;
+  display: block;
+  padding: 1rem 2rem;
+  background-color: var(--clr-primary);
+  color: var(--clr-secondary);
+  border: 0;
+  border-radius: 0.5rem;
+  text-decoration: none;
+}

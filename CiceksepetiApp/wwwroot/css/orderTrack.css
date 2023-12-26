@@ -1,0 +1,54 @@
+:root {
+  --clr-primary: hsl(18, 89%, 51%);
+  --clr-secondary: hsl(0, 0%, 90%);
+  --clr-hover: hsl(240, 100%, 67%);
+  --clr-divider: hsl(0, 0%, 12%);
+  --clr-bg: hsl(0, 0%, 8%);
+}
+.centered {
+  display: flex;
+  justify-content: center;
+}
+
+.trackForm {
+  width: min(90%, 60rem);
+  margin-top: 5rem;
+}
+
+.trackHeader {
+  color: var(--clr-secondary);
+  font-weight: 400;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+#trackNumber {
+  width: 100%;
+  margin-block: 2rem;
+  border: 2px solid var(--clr-secondary);
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--clr-divider);
+  transition: border 0.2s;
+  color: var(--clr-secondary);
+}
+
+#trackNumber:focus {
+  outline: 0;
+  border: 2px solid var(--clr-primary);
+}
+
+.trackSubmit {
+  cursor: pointer;
+  border: 0;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  float: right;
+  background-color: var(--clr-primary);
+  transition: background-color 0.2s;
+  color: var(--clr-secondary);
+}
+
+.trackSubmit:hover {
+  background-color: hsl(18, 89%, 31%);
+}

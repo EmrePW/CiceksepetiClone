@@ -1,0 +1,19 @@
+.category__list {
+  display: flex;
+  list-style-type: none;
+  margin-top: 0.5rem;
+  background-color: var(--clr-divider);
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+}
+
+.category__item > a {
+  padding: 0.5rem 1rem;
+  color: white;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.category__item > a:hover {
+  color: blue;
+}

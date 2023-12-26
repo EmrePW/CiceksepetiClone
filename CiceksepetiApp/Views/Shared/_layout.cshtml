@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tatlısepeti</title>
+    <link asp-append-version="true" rel="shortcut icon" href="~/images/favicon.ico" type="image/x-icon">
+    <link asp-append-version="true" rel="stylesheet" href="~/css/reset.css">
+    <link asp-append-version="true" rel="stylesheet" href="~/css/layout.css">
+</head>
+
+<body>
+    <header class="header">
+        <partial name="_header"></partial>
+        @RenderSection("Header", false)
+
+    </header>
+    <main class="main">
+        @RenderBody()
+    </main>
+    <footer class="footer">
+        @RenderSection("Footer", false)
+        <partial name="_footer"></partial>
+    </footer>
+
+    <script asp-append-version="true" src="~/js/site.js"></script>
+    <script asp-append-version="true" src="~/lib/font-awesome/js/all.min.js"></script>
+</body>
+
+</html>

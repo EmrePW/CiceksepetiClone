@@ -1,0 +1,55 @@
+:root {
+  --clr-button-hover: hsl(18, 89%, 31%);
+}
+
+label {
+  display: block;
+}
+
+input {
+  width: 5rem;
+  transition: width 0.5s;
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid var(--clr-primary);
+  width: 10rem;
+}
+
+.filter-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-bottom: 1px solid white;
+  margin-bottom: 1rem;
+}
+
+#myForm {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 1rem;
+  background-color: var(--clr-divider);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.price-filter {
+  display: flex;
+  gap: 1rem;
+}
+
+#filter-button {
+  outline: none;
+  border: 0;
+  color: var(--clr-secondary);
+  padding: 0.5rem 1rem;
+  background-color: var(--clr-primary);
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+#filter-button:hover {
+  background-color: var(--clr-button-hover);
+}

@@ -1,0 +1,11 @@
+D:\skool\5th Half-Year\DBMS\Ciceksepeti\Presentation\bin\Debug\net6.0\Presentation.deps.json
+D:\skool\5th Half-Year\DBMS\Ciceksepeti\Presentation\bin\Debug\net6.0\Presentation.dll
+D:\skool\5th Half-Year\DBMS\Ciceksepeti\Presentation\bin\Debug\net6.0\Presentation.pdb
+D:\skool\5th Half-Year\DBMS\Ciceksepeti\Presentation\obj\Debug\net6.0\Presentation.GeneratedMSBuildEditorConfig.editorconfig
+D:\skool\5th Half-Year\DBMS\Ciceksepeti\Presentation\obj\Debug\net6.0\Presentation.AssemblyInfoInputs.cache
+D:\skool\5th Half-Year\DBMS\Ciceksepeti\Presentation\obj\Debug\net6.0\Presentation.AssemblyInfo.cs
+D:\skool\5th Half-Year\DBMS\Ciceksepeti\Presentation\obj\Debug\net6.0\Presentation.csproj.CoreCompileInputs.cache
+D:\skool\5th Half-Year\DBMS\Ciceksepeti\Presentation\obj\Debug\net6.0\Presentation.dll
+D:\skool\5th Half-Year\DBMS\Ciceksepeti\Presentation\obj\Debug\net6.0\refint\Presentation.dll
+D:\skool\5th Half-Year\DBMS\Ciceksepeti\Presentation\obj\Debug\net6.0\Presentation.pdb
+D:\skool\5th Half-Year\DBMS\Ciceksepeti\Presentation\obj\Debug\net6.0\ref\Presentation.dll

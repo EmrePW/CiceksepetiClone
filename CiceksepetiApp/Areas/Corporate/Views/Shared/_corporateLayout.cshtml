@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link asp-append-version="true" rel="shortcut icon" href="~/images/favicon.ico" type="image/x-icon">
+    <link asp-append-version="true" rel="stylesheet" href="~/css/reset.css">
+    <link asp-append-version="true" rel="stylesheet" href="~/css/corporateLayout.css">
+    <link rel="stylesheet" href="~/css/.css">
+
+    <title>Tatlısepeti - Kurumsal</title>
+</head>
+
+<body>
+    <header class="header">
+        <partial name="_corporateHeader"></partial>
+        @RenderSection("Header", false)
+    </header>
+
+    <main class="main">
+        @RenderBody()
+    </main>
+
+    <footer class="footer">
+        <partial name="_footer"></partial>
+        @RenderSection("Footer", false)
+    </footer>
+
+    <script asp-append-version="true" src="~/js/site.js"></script>
+    <script asp-append-version="true" src="~/lib/font-awesome/js/all.min.js"></script>
+</body>
+
+</html>

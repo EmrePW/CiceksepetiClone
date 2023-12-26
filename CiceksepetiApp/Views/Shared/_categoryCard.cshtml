@@ -1,0 +1,14 @@
+@model Category
+
+<head>
+    <link asp-append-version="true" rel="stylesheet" href="~/css/reset.css">
+    <link asp-append-version="true" rel="stylesheet" href="~/css/categoryCard.css">
+</head>
+
+<a asp-controller="Category" asp-action="@Model.CategoryName" class="categoryCard">
+    <div class="category_img">
+        <img src="~/images/default.png" alt="">
+    </div>
+
+    @Model.CategoryName
+</a>

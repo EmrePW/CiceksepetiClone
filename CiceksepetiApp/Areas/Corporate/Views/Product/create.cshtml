@@ -1,0 +1,46 @@
+@model ProductDtoForInsertion
+
+<head>
+    <link rel="stylesheet" href="~/css/corporateProductCreate.css">
+</head>
+
+<div class="centered">
+    <div asp-validation-summary="All"></div>
+    <h1 class="createHeader">Create Product</h1>
+
+    <form asp-action="Create" method="POST" class="createForm" enctype="multipart/form-data">
+        <input type="hidden" name="UserName" value="@User?.Identity?.Name">
+        <div class="createForm__area">
+            <label asp-for="ProductName">Ürün İsmi</label>
+            <input type="text" asp-for="ProductName">
+        </div>
+        <div class="createForm__area">
+            <label asp-for="CategoryID">Kategori</label>
+            <select asp-for="CategoryID" id="">
+                @foreach (Category cat in ViewBag.Categories)
+                {
+                    if (!cat.SuperCategory.Equals(0))
+                    {
+                        <option value="@cat.CategoryID">@cat.CategoryName</option>
+                    }
+                }
+            </select>
+        </div>
+        <div class="createForm__area">
+            <label asp-for="UnitPrice">Birim Fiyat</label>
+            <input type="text" asp-for="UnitPrice" id="">
+        </div>
+        <div class="createForm__area">
+            <label asp-for="ImageURL">Resim</label>
+            <input type="file" name="file" id="">
+
+        </div>
+        <div class="createForm__area">
+            <label asp-for="Summary">Özet bilgi</label>
+            <textarea asp-for="Summary" id="" cols="30" rows="4"></textarea>
+        </div>
+        <div class="createForm__area">
+            <button class="create-submit" type="submit">Create Product</button>
+        </div>
+    </form>
+</div>

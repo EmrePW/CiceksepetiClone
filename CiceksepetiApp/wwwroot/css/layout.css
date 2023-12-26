@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800&display=swap");
+
+:root {
+  --clr-primary: hsl(18, 89%, 51%);
+  --clr-secondary: hsl(0, 0%, 90%);
+  --clr-hover: hsl(240, 100%, 67%);
+  --clr-divider: hsl(0, 0%, 12%);
+  --clr-bg: hsl(0, 0%, 8%);
+}
+
+.clr-primary {
+  color: var(--clr-primary);
+}
+
+.clr-secondary {
+  color: var(--clr-secondary);
+}
+
+body {
+  background-color: var(--clr-bg);
+  color: white;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 2px solid var(--clr-divider);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrap {
+  align-self: center;
+}
+
+.first {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--clr-divider);
+}
+
+.second {
+  align-self: flex-start;
+}
+
+.logo > a > img {
+  width: 80%;
+  padding-block: 0.5rem;
+}
+
+.search {
+  margin-right: 5rem;
+}
+
+.search-field {
+  display: flex;
+}
+
+#input-mainSearch {
+  width: min(40vw, 35rem);
+  border-radius: 0.5rem 0 0 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid gray;
+}
+
+#input-mainSearch:focus {
+  border-color: var(--clr-primary);
+  outline: none;
+}
+
+#input-mainSearch::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.search-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: var(--clr-primary);
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.search-icon > svg {
+  color: white;
+  font-size: 1.25rem;
+}
+
+.navbar-nav {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  transition: 0.1s;
+  padding: 0.75rem 0.375rem;
+  margin-inline: 0.125rem;
+}
+
+.nav-link:hover {
+  color: var(--clr-hover);
+}
+
+.cart {
+  aspect-ratio: 1;
+  font-size: 1rem;
+  background-color: var(--clr-primary);
+  padding: 0.5rem 0.625rem;
+  border-radius: 0.25rem;
+}
+
+.cart:hover {
+  color: white;
+}
+
+.sticky-categories-nav {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.sticky-navbar-item {
+  padding: 0.75rem 0;
+}
+
+.sticky-nav-link {
+  text-decoration: none;
+  padding: 0 1rem;
+  border-right: 1px solid grey;
+  transition: 0.1s;
+}
+
+.sticky-nav-link:hover {
+  color: var(--clr-hover);
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 2px solid var(--clr-divider);
+  background-color: var(--clr-divider);
+}
+
+#footer-header {
+  text-align: center;
+  margin-block: 1rem;
+}
+
+.download-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.nav-app {
+  display: flex;
+  gap: 0.5rem;
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-app > li {
+  margin-block: 1rem;
+}
+
+.app-link {
+  color: var(--clr-secondary);
+  text-decoration: none;
+  background-color: var(--clr-bg);
+  padding: 0.5rem 1rem;
+  margin-block: 1rem;
+}
+
+.nav-socials {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.social-link {
+  color: var(--clr-secondary);
+  font-size: 1.75rem;
+  text-decoration: none;
+}
+
+.privacy {
+  font-size: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.privacy > a {
+  color: var(--clr-secondary);
+}
+
+.nav-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 2rem;
+}
+
+.enterprise-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-footer-link {
+  text-decoration: none;
+  color: var(--clr-secondary);
+  font-size: 0.875rem;
+}
+
+.info {
+  width: 75%;
+  text-align: center;
+  font-size: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.copyright {
+  text-align: center;
+}
+
+.attr_link {
+  color: var(--clr-hover);
+  text-decoration: none;
+  text-align: center;
+}

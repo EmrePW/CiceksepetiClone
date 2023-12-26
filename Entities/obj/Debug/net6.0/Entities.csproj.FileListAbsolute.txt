@@ -1,0 +1,12 @@
+D:\skool\5th Half-Year\DBMS\Ciceksepeti\Entities\bin\Debug\net6.0\Entities.deps.json
+D:\skool\5th Half-Year\DBMS\Ciceksepeti\Entities\bin\Debug\net6.0\Entities.dll
+D:\skool\5th Half-Year\DBMS\Ciceksepeti\Entities\bin\Debug\net6.0\Entities.pdb
+D:\skool\5th Half-Year\DBMS\Ciceksepeti\Entities\obj\Debug\net6.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+D:\skool\5th Half-Year\DBMS\Ciceksepeti\Entities\obj\Debug\net6.0\Entities.AssemblyInfoInputs.cache
+D:\skool\5th Half-Year\DBMS\Ciceksepeti\Entities\obj\Debug\net6.0\Entities.AssemblyInfo.cs
+D:\skool\5th Half-Year\DBMS\Ciceksepeti\Entities\obj\Debug\net6.0\Entities.csproj.CoreCompileInputs.cache
+D:\skool\5th Half-Year\DBMS\Ciceksepeti\Entities\obj\Debug\net6.0\Entities.dll
+D:\skool\5th Half-Year\DBMS\Ciceksepeti\Entities\obj\Debug\net6.0\refint\Entities.dll
+D:\skool\5th Half-Year\DBMS\Ciceksepeti\Entities\obj\Debug\net6.0\Entities.pdb
+D:\skool\5th Half-Year\DBMS\Ciceksepeti\Entities\obj\Debug\net6.0\ref\Entities.dll
+D:\skool\5th Half-Year\DBMS\Ciceksepeti\Entities\obj\Debug\net6.0\Entities.csproj.AssemblyReference.cache

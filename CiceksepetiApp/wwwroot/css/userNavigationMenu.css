@@ -1,0 +1,28 @@
+:root {
+  --clr-primary: hsl(18, 89%, 51%);
+  --clr-secondary: hsl(0, 0%, 90%);
+  --clr-hover: hsl(240, 100%, 67%);
+  --clr-divider: hsl(0, 0%, 12%);
+  --clr-bg: hsl(0, 0%, 8%);
+}
+
+.user-navbar {
+  list-style-type: none;
+  padding: 0;
+}
+
+.user-navbar__item {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.user-navbar__item:hover {
+  background-color: var(--clr-divider);
+}
+
+.user-navbar__link {
+  width: 100%;
+  text-decoration: none;
+  color: var(--clr-secondary);
+  font-size: 1rem;
+}

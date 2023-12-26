@@ -1,0 +1,15 @@
+D:\skool\5th Half-Year\DBMS\Ciceksepeti\Repositories\bin\Debug\net6.0\Repositories.deps.json
+D:\skool\5th Half-Year\DBMS\Ciceksepeti\Repositories\bin\Debug\net6.0\Repositories.dll
+D:\skool\5th Half-Year\DBMS\Ciceksepeti\Repositories\bin\Debug\net6.0\Repositories.pdb
+D:\skool\5th Half-Year\DBMS\Ciceksepeti\Repositories\obj\Debug\net6.0\Repositories.csproj.AssemblyReference.cache
+D:\skool\5th Half-Year\DBMS\Ciceksepeti\Repositories\obj\Debug\net6.0\Repositories.GeneratedMSBuildEditorConfig.editorconfig
+D:\skool\5th Half-Year\DBMS\Ciceksepeti\Repositories\obj\Debug\net6.0\Repositories.AssemblyInfoInputs.cache
+D:\skool\5th Half-Year\DBMS\Ciceksepeti\Repositories\obj\Debug\net6.0\Repositories.AssemblyInfo.cs
+D:\skool\5th Half-Year\DBMS\Ciceksepeti\Repositories\obj\Debug\net6.0\Repositories.csproj.CoreCompileInputs.cache
+D:\skool\5th Half-Year\DBMS\Ciceksepeti\Repositories\obj\Debug\net6.0\Repositories.dll
+D:\skool\5th Half-Year\DBMS\Ciceksepeti\Repositories\obj\Debug\net6.0\refint\Repositories.dll
+D:\skool\5th Half-Year\DBMS\Ciceksepeti\Repositories\obj\Debug\net6.0\Repositories.pdb
+D:\skool\5th Half-Year\DBMS\Ciceksepeti\Repositories\obj\Debug\net6.0\ref\Repositories.dll
+D:\skool\5th Half-Year\DBMS\Ciceksepeti\Repositories\bin\Debug\net6.0\Entities.dll
+D:\skool\5th Half-Year\DBMS\Ciceksepeti\Repositories\bin\Debug\net6.0\Entities.pdb
+D:\skool\5th Half-Year\DBMS\Ciceksepeti\Repositories\obj\Debug\net6.0\Repositories.csproj.CopyComplete

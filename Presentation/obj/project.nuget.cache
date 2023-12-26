@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "cGSxXKosdGsm3zNXvrkeA4NILK6t+n9bToxe1p7N6IcvttN9DLi/Tq4mCPj4ogsBzSqu2tRItc6W7e0Z4qFK1w==",
+  "success": true,
+  "projectFilePath": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\Presentation\\Presentation.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Pc\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.24\\microsoft.netcore.app.ref.6.0.24.nupkg.sha512",
+    "C:\\Users\\Pc\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.24\\microsoft.windowsdesktop.app.ref.6.0.24.nupkg.sha512",
+    "C:\\Users\\Pc\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.24\\microsoft.aspnetcore.app.ref.6.0.24.nupkg.sha512"
+  ],
+  "logs": []
+}

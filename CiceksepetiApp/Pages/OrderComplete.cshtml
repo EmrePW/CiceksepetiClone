@@ -1,0 +1,20 @@
+@page
+@{
+    Layout = "_orderLayout";
+}
+
+@functions {
+    [BindProperty(SupportsGet = true)]
+
+    public int track { get; set; }
+}
+
+<head>
+    <link rel="stylesheet" href="~/css/pageComplete.css">
+</head>
+
+<div class="complete-wrapper">
+    <h1 class="header">Danke Schön!</h1>
+    <h2 class="header">Order Tracking Number : @track</h2>
+    <a class="go-home-btn" asp-controller="Home">Go home</a>
+</div>

@@ -1,0 +1,9 @@
+@model List<OrderLineModel>
+
+<div class="centered" style="width: 90%;">
+
+    @foreach (var line in Model)
+    {
+        <partial name="_orderCard" model="line"></partial>
+    }
+</div>

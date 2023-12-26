@@ -1,0 +1,116 @@
+@model CompanyDto
+@{
+    Layout = "_orderLayout";
+}
+
+<head>
+    <link rel="stylesheet" href="~/css/AccountCss.css">
+</head>
+
+<div class="centered">
+    <div class="error" asp-validation-summary="All"></div>
+    <div class="login-wrap">
+        <h3 class="cregister__header">Corporate Register</h3>
+        <form asp-action="CorporateRegister" class="login__form" method="POST">
+            <div class="username_password even-columns">
+                <input type="text" asp-for="username" class="corporate-input" placeholder="Username">
+                <input type="text" asp-for="Password" class="corporate-input" placeholder="Password">
+            </div>
+            <div class="application_type">
+                <label class="corporate-label" asp-for="CompanyOwner">Satış Amacınız</label>
+                <select class="select" asp-for="CompanyOwner" id="companyOwnerSelect">
+                    <option value="self-employed">Kendi ürünlerimi satmak istiyorum.</option>
+                    <option value="woman-entrepreneur">Kadın girişimci olarak satış yapmak istiyorum.</option>
+                    <option value="distributor">Tatlısepeti bayisi olmak istiyorum.</option>
+                    <option value="student">Öğrenci olarak satış yapmak istiyorum.</option>
+                    <option value="cso">STK olarak satış yapmak istiyorum.</option>
+                </select>
+            </div>
+            <div class="company_info1 even-columns">
+                <div>
+                    <input type="text" asp-for="CompanyName" class="corporate-input"
+                        placeholder="Firma Adı (Ticaret Ünvanı)">
+                </div>
+                <div>
+                    <select class="select" asp-for="CompanyType" id="company-type">
+                        <option value="personal">Kişisel</option>
+                        <option value="company">Anonim ve Limited Şirket</option>
+                    </select>
+                </div>
+            </div>
+            <div class="company_info2 even-columns">
+                <div>
+                    <input type="text" asp-for="IdNumber" class="corporate-input" placeholder="VKN/TCKN Yazınız"
+                        maxlength="11">
+                </div>
+                <div>
+                    <select class="select" asp-for="SellCategory" id="sell-category">
+                        <option value="flower">Çiçek</option>
+                        <option value="chocolate">Çikolata</option>
+                    </select>
+                </div>
+            </div>
+            <div class="company_rep_info even-columns">
+                <div>
+                    <input type="text" asp-for="ContactName" class="corporate-input" placeholder="Yetkili Adı Yazınız">
+                </div>
+                <div>
+                    <input type="text" asp-for="Email" class="corporate-input" placeholder="Yetkili Email Yazınız">
+                </div>
+                <div>
+                    <input type="text" asp-for="PhoneNumber" class="corporate-input"
+                        placeholder="Yetkili Telefon Numarası Yazınız">
+                </div>
+            </div>
+            <div class="company_info3 even-columns">
+                <div class="info3__section1 even-columns">
+                    <select class="select" asp-for="CompanyTradeType">
+                        <option value="Esnaf - Sanatkar">Esnaf - Sanatkar</option>
+                        <option value="Tacir ve Adi Ortaklık">Tacir ve Adi Ortaklık</option>
+                    </select>
+                    <input type="text" asp-for="MERSISNumber" class="corporate-input" placeholder="Mersis no"
+                        maxlength="16">
+                    <input type="text" asp-for="KEPAddress" class="corporate-input" placeholder="KEP Adresi">
+                </div>
+                <div class="info3__section2">
+                    <label class="corporate-label" asp-for="TaxProvince">Vergi dairesi ili seçiniz</label>
+                    <select class="select" asp-for="TaxProvince">
+                        <option value="ANKARA">Ankara</option>
+                        <option value="ISTANBUL">İstanbul</option>
+                        <option value="IZMIR">İzmir</option>
+                        <option value="ANTALYA">Antalya</option>
+                        <option value="TRABZON">Trabzon</option>
+                        <option value="ERZURUM">Erzurum</option>
+                    </select>
+                </div>
+                <div class="info3__section3 even-columns">
+                    <div>
+                        <label class="corporate-label" asp-for="City">Firma Şehrini seçiniz</label>
+                        <select class="select" asp-for="City">
+                            <option value="ANKARA">Ankara</option>
+                            <option value="ISTANBUL">İstanbul</option>
+                            <option value="IZMIR">İzmir</option>
+                            <option value="ANTALYA">Antalya</option>
+                            <option value="TRABZON">Trabzon</option>
+                            <option value="ERZURUM">Erzurum</option>
+                        </select>
+                    </div>
+                    <div>
+                        <textarea asp-for="Address" class="corporate-input" cols="30" rows="10"
+                            placeholder="Firmanın Açık Adresini giriniz. Mahalle, Cadde/Sokak, Bina No, SEMT/İLÇE/İL"></textarea>
+                    </div>
+                    <div class="even-columns">
+                        <input type="text" asp-for="VirtualCompanyName" class="corporate-input"
+                            placeholder="Sanal Firma Adını Giriniz">
+                        <select class="select" asp-for="DeliveryMethod" id="">
+                            <option value="service">Servis (Aynı gün teslimat)</option>
+                            <option value="cargo">Kargo</option>
+                            <option value="service-cargo">Servis + Kargo</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <button class="submit-button" type="submit">Başvur</button>
+        </form>
+    </div>
+</div>
