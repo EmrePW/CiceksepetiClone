@@ -251,6 +251,9 @@ namespace CiceksepetiApp.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<decimal?>("Profit")
+                        .HasColumnType("decimal(18,2)");
+
                     b.Property<string>("SellCategory")
                         .HasColumnType("nvarchar(max)");
 
@@ -264,6 +267,9 @@ namespace CiceksepetiApp.Migrations
 
                     b.Property<string>("VirtualCompanyName")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal?>("weeklyProfit")
+                        .HasColumnType("decimal(18,2)");
 
                     b.HasKey("CompanyID");
 
@@ -728,22 +734,22 @@ namespace CiceksepetiApp.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "f9aa58c4-0ff4-4d31-a51f-79f44bd2f270",
-                            ConcurrencyStamp = "30529fcc-42ae-4325-adf1-e0892f302c50",
+                            Id = "6fb95b12-eac3-4ca3-824d-36994d15ee28",
+                            ConcurrencyStamp = "ca923054-7e6e-4880-af94-530c26b3c4c6",
                             Name = "User",
                             NormalizedName = "USER"
                         },
                         new
                         {
-                            Id = "8de3f6d3-83b0-4af0-9117-87c80dda1210",
-                            ConcurrencyStamp = "4d6cf91e-2bef-4650-a86e-6caca9b19778",
+                            Id = "d3bce76b-bcf3-46f8-924f-2a1c045ecbf6",
+                            ConcurrencyStamp = "48333dd1-2a37-47bd-8f17-d6513b0ecf3a",
                             Name = "Corporate",
                             NormalizedName = "CORPORATE"
                         },
                         new
                         {
-                            Id = "189c1866-44da-41e8-af3f-862dde6ca486",
-                            ConcurrencyStamp = "11c0ae44-e7e3-4c08-8f66-3af0cb2edff5",
+                            Id = "89744e75-c446-4e54-aabf-c154611450f6",
+                            ConcurrencyStamp = "2eae3949-f8cc-4e17-b4e9-9bec44a0ebac",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         });

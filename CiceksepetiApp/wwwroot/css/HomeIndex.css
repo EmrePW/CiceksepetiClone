@@ -42,3 +42,17 @@
   background-size: 100% 100%;
   background-position: center;
 }
+
+.area3 {
+  grid-column: 2 / 4;
+  background-image: url(../images/most-rated.png);
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+.area4 {
+  grid-column: 4 / 6;
+  background-image: url("../images/most-liked.png");
+  background-size: 100% 100%;
+  background-position: center;
+}

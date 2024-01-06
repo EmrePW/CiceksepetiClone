@@ -26,3 +26,20 @@
   color: var(--clr-secondary);
   font-size: 1rem;
 }
+
+.user-navbar__item svg {
+  transition: scale 0.2s, margin-right 0.3s;
+}
+
+.user-navbar__item:hover svg {
+  scale: 1.4;
+  margin-right: 4px;
+}
+
+.active {
+  color: var(--clr-primary);
+}
+
+.user-navbar__link.active svg {
+  scale: 1.2;
+}

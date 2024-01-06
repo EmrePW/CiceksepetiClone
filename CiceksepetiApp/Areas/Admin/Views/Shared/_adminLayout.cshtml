@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tatlısepeti - Admin Panel</title>
+    <link asp-append-version="true" rel="stylesheet" href="~/css/reset.css">
+    <link asp-append-version="true" rel="stylesheet" href="~/css/adminLayout.css">
+    <link rel="shortcut icon" href="~/images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header class="header">
+        @RenderSection("Header", false)
+        <partial name="_adminHeader"></partial>
+    </header>
+
+    <main class="main">
+        @RenderBody()
+    </main>
+
+    <script asp-append-version="true" src="~/js/site.js"></script>
+    <script asp-append-version="true" src="~/lib/font-awesome/js/all.min.js"></script>
+</body>
+
+</html>

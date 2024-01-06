@@ -24,8 +24,8 @@
                 {
                     <div class="item-wrapper">
                         <div class="item-image">
-                            @* <img src="@item.ImageURL" alt="Image not found"> *@
-                            <div style="width:75px; aspect-ratio: 1; border-radius: .5rem; background-color:red;"></div>
+                            <img style="width:75px; aspect-ratio: 1; border-radius: .5rem;"
+                                src="@(item.ImageURL ?? "~/images/default.png")" alt="Image not found">
                         </div>
                         <div class="item-name">
                             <a class="item-name-link" asp-area="" asp-controller="Product" asp-action="Get"

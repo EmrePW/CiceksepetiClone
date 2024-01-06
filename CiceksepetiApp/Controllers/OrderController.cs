@@ -46,7 +46,12 @@ namespace CiceksepetiApp.Controllers
             if (ModelState.IsValid)
             {
                 order.Items = _cart.CartLines.ToArray();
+                foreach (var item in order.Items)
+                {
+                    _manager.ProductService.DecrementStock(item.Product.ProductID);
+                }
                 _manager.OrderService.SaveOrder(order);
+
                 _cart.ClearCart();
                 return RedirectToPage("/OrderComplete",
                 new
@@ -73,6 +78,7 @@ namespace CiceksepetiApp.Controllers
             {
                 throw new Exception("Order not found.");
             }
+            var sum = order.Items.Sum(line => line.Product.DiscountedPrice ?? line.Product.UnitPrice);
             return View(order);
         }
     }

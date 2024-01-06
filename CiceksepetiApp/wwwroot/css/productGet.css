@@ -218,6 +218,7 @@
 }
 
 .product-ratings {
+  width: 60%;
   border: 2px solid var(--clr-section);
   padding: 1rem;
   margin-block: 2rem;
@@ -295,7 +296,8 @@
 
 .comment {
   display: flex;
-  padding-bottom: 2rem;
+  padding-block: 1rem;
+  border-top: 2px solid var(--clr-section);
   border-bottom: 2px solid var(--clr-section);
   align-items: center;
 }
@@ -324,4 +326,23 @@
   width: 100px;
   height: 100px;
   background-color: red;
+}
+
+.no-login {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.product__header {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.out-of-stock {
+  color: red;
+}
+
+button:disabled {
+  cursor: not-allowed;
 }

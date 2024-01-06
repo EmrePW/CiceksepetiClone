@@ -1,0 +1,77 @@
+<head>
+    <link rel="stylesheet" href="~/css/adminDashboardIndex.css">
+</head>
+
+<div class="dashboard_wrapper">
+    <div class="row">
+        <div class="card company_count">
+            <h2 class="card-header">
+                Total Company Count
+            </h2>
+            <div class="info">
+                @ViewBag.companyCount
+            </div>
+        </div>
+        <div class="card users">
+            <h2 class="card-header">
+                Total Users
+            </h2>
+            <div class="info">
+                @ViewBag.userCount
+            </div>
+        </div>
+        <div class="card product_count">
+            <h2 class="card-header">
+                Total Products
+            </h2>
+            <div class="info">
+                @ViewBag.productCount
+            </div>
+        </div>
+        <div class="card gross_sum">
+            <h2 class="card-header">
+                Gross Sum of All Time
+            </h2>
+            <div class="info">
+                @ViewBag.GrossSum.ToString("c2")
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="card">
+            <h2 class="card-header">
+                Most Grossing Compaines This Week
+            </h2>
+            <div class="item_list">
+                @foreach (var item in ViewBag.companiesThisWeek)
+                {
+                    <partial name="_companyCard" model="item"></partial>
+                }
+            </div>
+        </div>
+        <div class="card">
+            <h2 class="card-header">
+                Most Grossing Companies
+            </h2>
+            <div class="item_list">
+                @foreach (var item in ViewBag.companies)
+                {
+                    <partial name="_companyCard" model="item"></partial>
+                }
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="card">
+            <h2 class="card-header">
+                Recent Company Applications
+            </h2>
+            <div class="item_list">
+                @foreach (var item in ViewBag.pendingCompanies)
+                {
+                    <partial name="_pendingCompanyCard" model="item"></partial>
+                }
+            </div>
+        </div>
+    </div>
+</div>

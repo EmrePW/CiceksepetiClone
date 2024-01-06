@@ -1,0 +1,41 @@
+@model List<Rating>
+
+<head>
+    <link rel="stylesheet" href="~/css/corporateRatingIndex.css">
+</head>
+
+<div class="centered">
+    @if (Model.Count.Equals(0))
+    {
+        <h2 class="no-ratings">There are no ratings yet...</h2>
+    }
+    @foreach (var item in Model)
+    {
+        <div class="rating">
+            <div class="image">
+                <img src="@(item.Product.ImageURL ?? "../images/default.png")" alt="">
+            </div>
+            <div class="info">
+                <h3 class="item-name"><a asp-area="" asp-controller="Product" asp-action="Get"
+                        asp-route-id="@item.ProductID">@item.Product.ProductName</a></h3>
+                <div class="stars">
+                    @for (int i = 1; i <= Int16.Parse(item.RatingValue); i++)
+                    {
+                        <i class="fa-solid fa-star" style="color: #fff700;"></i>
+                    }
+                    @for (int i = 5; i > Int16.Parse(item.RatingValue); i--)
+                    {
+                        <i class="fa-solid fa-star" style="color: #949494;"></i>
+                    }
+                </div>
+                @if (item.Opinion is not null)
+                {
+                    <div class="opinion">
+                        @item.Opinion
+                    </div>
+                }
+
+            </div>
+        </div>
+    }
+</div>

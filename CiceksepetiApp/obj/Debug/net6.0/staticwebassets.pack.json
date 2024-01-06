@@ -9,6 +9,42 @@
       "PackagePath": "staticwebassets\\css\\HomeIndex.css"
     },
     {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\css\\adminCompanyApp.css",
+      "PackagePath": "staticwebassets\\css\\adminCompanyApp.css"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\css\\adminCompanyCard.css",
+      "PackagePath": "staticwebassets\\css\\adminCompanyCard.css"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\css\\adminCompanyIndex.css",
+      "PackagePath": "staticwebassets\\css\\adminCompanyIndex.css"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\css\\adminDashboardIndex.css",
+      "PackagePath": "staticwebassets\\css\\adminDashboardIndex.css"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\css\\adminHeader.css",
+      "PackagePath": "staticwebassets\\css\\adminHeader.css"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\css\\adminLayout.css",
+      "PackagePath": "staticwebassets\\css\\adminLayout.css"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\css\\adminPendingCompanyCard.css",
+      "PackagePath": "staticwebassets\\css\\adminPendingCompanyCard.css"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\css\\adminProduct.css",
+      "PackagePath": "staticwebassets\\css\\adminProduct.css"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\css\\adminUserCard.css",
+      "PackagePath": "staticwebassets\\css\\adminUserCard.css"
+    },
+    {
       "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\css\\cart.css",
       "PackagePath": "staticwebassets\\css\\cart.css"
     },
@@ -55,6 +91,10 @@
     {
       "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\css\\corporateProductIndex.css",
       "PackagePath": "staticwebassets\\css\\corporateProductIndex.css"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\css\\corporateRatingIndex.css",
+      "PackagePath": "staticwebassets\\css\\corporateRatingIndex.css"
     },
     {
       "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\css\\layout.css",
@@ -129,16 +169,24 @@
       "PackagePath": "staticwebassets\\css\\userRatings.css"
     },
     {
-      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\images\\Christine2.jpeg",
-      "PackagePath": "staticwebassets\\images\\Christine2.jpeg"
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\images\\Christine1.jpeg",
+      "PackagePath": "staticwebassets\\images\\Christine1.jpeg"
     },
     {
-      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\images\\Christinee.jpeg",
-      "PackagePath": "staticwebassets\\images\\Christinee.jpeg"
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\images\\DreamShaper_v5_Monika_from_Doki_Doki_Literature_Club_wearing_a_3.jpg",
+      "PackagePath": "staticwebassets\\images\\DreamShaper_v5_Monika_from_Doki_Doki_Literature_Club_wearing_a_3.jpg"
     },
     {
-      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\images\\_48323955-9ed3-44e4-8b78-6ec4f3af7948.jpeg",
-      "PackagePath": "staticwebassets\\images\\_48323955-9ed3-44e4-8b78-6ec4f3af7948.jpeg"
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\images\\DreamShaper_v5_Monika_gracefully_perched_atop_a_glossy_black_p_0.jpg",
+      "PackagePath": "staticwebassets\\images\\DreamShaper_v5_Monika_gracefully_perched_atop_a_glossy_black_p_0.jpg"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\images\\admin-pfp.png",
+      "PackagePath": "staticwebassets\\images\\admin-pfp.png"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\images\\angelina-jollivet-mNEpmNiFdXs-unsplash.jpg",
+      "PackagePath": "staticwebassets\\images\\angelina-jollivet-mNEpmNiFdXs-unsplash.jpg"
     },
     {
       "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\images\\bonnyfood.png",
@@ -149,6 +197,26 @@
       "PackagePath": "staticwebassets\\images\\default.png"
     },
     {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\images\\dmitry-zvolskiy-0-EU0frL6S4-unsplash.jpg",
+      "PackagePath": "staticwebassets\\images\\dmitry-zvolskiy-0-EU0frL6S4-unsplash.jpg"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\images\\earl-wilcox-vYTkBhESATA-unsplash.jpg",
+      "PackagePath": "staticwebassets\\images\\earl-wilcox-vYTkBhESATA-unsplash.jpg"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\images\\egor-lyfar-DPNrBT1WCMs-unsplash.jpg",
+      "PackagePath": "staticwebassets\\images\\egor-lyfar-DPNrBT1WCMs-unsplash.jpg"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\images\\elena-leya-v_6OqRUvIaE-unsplash.jpg",
+      "PackagePath": "staticwebassets\\images\\elena-leya-v_6OqRUvIaE-unsplash.jpg"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\images\\evie-fjord-nR3heTF3O1U-unsplash.jpg",
+      "PackagePath": "staticwebassets\\images\\evie-fjord-nR3heTF3O1U-unsplash.jpg"
+    },
+    {
       "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\images\\favicon.ico",
       "PackagePath": "staticwebassets\\images\\favicon.ico"
     },
@@ -157,12 +225,48 @@
       "PackagePath": "staticwebassets\\images\\flower.png"
     },
     {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\images\\gilbert-bergeraud-uPdEssyBmRE-unsplash.jpg",
+      "PackagePath": "staticwebassets\\images\\gilbert-bergeraud-uPdEssyBmRE-unsplash.jpg"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\images\\larisa-birta-v3uX7nGIzok-unsplash.jpg",
+      "PackagePath": "staticwebassets\\images\\larisa-birta-v3uX7nGIzok-unsplash.jpg"
+    },
+    {
       "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\images\\logo-corporate.png",
       "PackagePath": "staticwebassets\\images\\logo-corporate.png"
     },
     {
       "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\images\\logo.png",
       "PackagePath": "staticwebassets\\images\\logo.png"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\images\\marcella-marcella-hn6CC9aosEk-unsplash.jpg",
+      "PackagePath": "staticwebassets\\images\\marcella-marcella-hn6CC9aosEk-unsplash.jpg"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\images\\massimo-adami-JnqwC6dDL8c-unsplash.jpg",
+      "PackagePath": "staticwebassets\\images\\massimo-adami-JnqwC6dDL8c-unsplash.jpg"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\images\\monique-carrati---uvxmcdMv4-unsplash.jpg",
+      "PackagePath": "staticwebassets\\images\\monique-carrati---uvxmcdMv4-unsplash.jpg"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\images\\most-liked.png",
+      "PackagePath": "staticwebassets\\images\\most-liked.png"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\images\\most-rated.png",
+      "PackagePath": "staticwebassets\\images\\most-rated.png"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\images\\olga-kudriavtseva-4Ww3Gxc7O9s-unsplash.jpg",
+      "PackagePath": "staticwebassets\\images\\olga-kudriavtseva-4Ww3Gxc7O9s-unsplash.jpg"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\images\\paula-hayes-HSdModpz1lU-unsplash.jpg",
+      "PackagePath": "staticwebassets\\images\\paula-hayes-HSdModpz1lU-unsplash.jpg"
     },
     {
       "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\images\\plane1.jpeg",
@@ -189,12 +293,36 @@
       "PackagePath": "staticwebassets\\images\\plane6.jpg"
     },
     {
-      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\images\\plane7.jpg",
-      "PackagePath": "staticwebassets\\images\\plane7.jpg"
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\images\\rock-earth-8_sWuFn8onY-unsplash.jpg",
+      "PackagePath": "staticwebassets\\images\\rock-earth-8_sWuFn8onY-unsplash.jpg"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\images\\skon-communication-HaAF6bVuRp8-unsplash.jpg",
+      "PackagePath": "staticwebassets\\images\\skon-communication-HaAF6bVuRp8-unsplash.jpg"
     },
     {
       "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\images\\star.svg",
       "PackagePath": "staticwebassets\\images\\star.svg"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\images\\tamas-pap-6IDGTjq_Pic-unsplash.jpg",
+      "PackagePath": "staticwebassets\\images\\tamas-pap-6IDGTjq_Pic-unsplash.jpg"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\images\\tanaphong-toochinda-_f8S_o9xQK8-unsplash.jpg",
+      "PackagePath": "staticwebassets\\images\\tanaphong-toochinda-_f8S_o9xQK8-unsplash.jpg"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\images\\yasmine-duchesne-VAeIdVZWgTY-unsplash.jpg",
+      "PackagePath": "staticwebassets\\images\\yasmine-duchesne-VAeIdVZWgTY-unsplash.jpg"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\images\\zach-miles-BE9AifuJfD4-unsplash.jpg",
+      "PackagePath": "staticwebassets\\images\\zach-miles-BE9AifuJfD4-unsplash.jpg"
+    },
+    {
+      "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\images\\zang-zizu-iqinZIuXVag-unsplash.jpg",
+      "PackagePath": "staticwebassets\\images\\zang-zizu-iqinZIuXVag-unsplash.jpg"
     },
     {
       "Id": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\CiceksepetiApp\\wwwroot\\js\\site.js",

@@ -5,25 +5,29 @@
 <nav class="nav-wrap">
     <ul class="user-navbar">
         <li class="user-navbar__item">
-            <a class="user-navbar__link" asp-area="User" asp-controller="Dashboard" asp-action="Index">
+            <a class='user-navbar__link @(ViewContext.RouteData.Values["action"].ToString() == "Index" ? "active" : "")'
+                asp-area="User" asp-controller="Dashboard" asp-action="Index">
                 <i class="fa-solid fa-truck-front"></i>
                 Siparişlerim
             </a>
         </li>
         <li class="user-navbar__item">
-            <a class="user-navbar__link" asp-area="User" asp-controller="Dashboard" asp-action="Favourites">
+            <a class='user-navbar__link @(ViewContext.RouteData.Values["action"].ToString() == "Favourites" ? "active" : "")'
+                asp-area="User" asp-controller="Dashboard" asp-action="Favourites">
                 <i class="fa-regular fa-heart"></i>
                 Favorilerim
             </a>
         </li>
-        <li class="user-navbar__item">
-            <a class="user-navbar__link" asp-area="User" asp-controller="Dashboard" asp-action="Ratings">
+        <li class='user-navbar__item'>
+            <a class="user-navbar__link @(ViewContext.RouteData.Values["action"].ToString() == "Ratings" ? "active" : "")"
+                asp-area="User" asp-controller="Dashboard" asp-action="Ratings">
                 <i class="fa-regular fa-star"></i>
                 Değerlendirmelerim
             </a>
         </li>
-        <li class="user-navbar__item">
-            <a class="user-navbar__link" asp-area="User" asp-controller="Dashboard" asp-action="ChangePassword">
+        <li class='user-navbar__item'>
+            <a class="user-navbar__link @(ViewContext.RouteData.Values["action"].ToString() == "ChangePassword" ? "active" : "")"
+                asp-area="User" asp-controller="Dashboard" asp-action="ChangePassword">
                 <i class="fa-solid fa-key"></i>
                 Şifre Değiştir
             </a>

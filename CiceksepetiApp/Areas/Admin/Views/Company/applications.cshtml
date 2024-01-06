@@ -1,0 +1,55 @@
+@model IEnumerable<Company>
+
+<head>
+    <link rel="stylesheet" href="~/css/adminCompanyApp.css">
+</head>
+
+<div class="application_wrapper">
+    @foreach (var item in Model)
+    {
+        <div class="company">
+            <div class="company__name">
+                <h2>@item.VirtualCompanyName</h2>
+                <h3>@item.CompanyName</h3>
+            </div>
+            <div class="company__operations">
+                <div>
+                    <a class="operation accept" asp-area="Admin" asp-controller="Company" asp-action="Accept"
+                        asp-route-id="@item.CompanyID">
+                        <i class="fa-solid fa-check"></i>
+                        Accept</a>
+                </div>
+                <div>
+                    <a class="operation reject" asp-area="Admin" asp-controller="Company" asp-action="Reject"
+                        asp-route-id="@item.CompanyID">
+                        <i class="fa-solid fa-xmark"></i>
+                        Reject</a>
+                </div>
+            </div>
+            <div class="company__info_contact">
+                <div class="company__info">
+                    <div>Mağaza Tipi : @(item.CompanyType ?? "N/A")</div>
+                    <div>Satış Kategorisi : @(item.SellCategory ?? "N/A")</div>
+                    <div>Mağaza Amacı : @(item.CompanyOwner ?? "N/A")</div>
+                    <div>Mağaza Türü : @(item.CompanyTradeType ?? "N/A")</div>
+                </div>
+                <div class="company__contact">
+                    <div>Sorumlu İsmi : @item.ContactName</div>
+                    <div>Sorumlu Email : @item.Email</div>
+                    <div>Sorumlu Telefon : @item.PhoneNumber</div>
+                </div>
+            </div>
+            <div class="company__tax_address">
+                <div class="company__tax">
+                    <div>MERSIS : @item.MERSISNumber</div>
+                    <div>KEP Adresi : @item.KEPAddress</div>
+                    <div>Vergi Dairesi : @item.TaxProvince</div>
+                </div>
+                <div class="company__address">
+                    <div>@item.Address</div>
+                    <div>@item.City @item.Country</div>
+                </div>
+            </div>
+        </div>
+    }
+</div>

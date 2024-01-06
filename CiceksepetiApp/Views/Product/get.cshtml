@@ -15,6 +15,11 @@
     <div class="product_details">
         <div class="name_and_price">
             <h3 class="product_name">@Model.ProductName</h3>
+            <h3>@Model.Summary</h3>
+            @if (Model.UnitsInStock is null || Model.UnitsInStock.Equals(0))
+            {
+                <h2 class="out-of-stock">Bu ürün stokta yok!</h2>
+            }
             <div class="price">
                 @if (Model.DiscountedPrice is not null)
                 {
@@ -42,7 +47,7 @@
                     </div>
                 }
                 <div class="ratings">
-                    <p>Bu ürün @ViewBag.ratings.Count kişi tarafından değerlendirildi</p>
+                    <p>Bu ürün @ViewBag.rating_count kişi tarafından değerlendirildi</p>
                     <div class="comment-stars">
                         @for (int i = 1; i <= (int)ViewBag.AverageRating; i++)
                         {
@@ -113,7 +118,8 @@
                 </p>
             </div>
             <div class="button-group">
-                <button class="submit-button" type="submit">Order</button>
+                <button class="submit-button" type="submit"
+                    disabled="@(Model.UnitsInStock is null || Model.UnitsInStock.Equals(0) ? true : false)">Order</button>
                 @if (ViewBag.FavouriteItem)
                 {
                     <a asp-controller="Review" asp-action="FavouriteItem" asp-route-productId="@Model.ProductID"
@@ -169,7 +175,7 @@
     }
     else
     {
-        <h3>You must Login to leave a review</h3>
+        <h3 class="no-login">You must Login to leave a review</h3>
     }
 
     @if (ViewBag.Ratings.Count == 0)
@@ -195,7 +201,7 @@
                                 <i class="fa-solid fa-star" style="color: #949494;"></i>
                             }
                         </div>
-                        @if (User.Identity.Name.Equals("Admin"))
+                        @if (rating.UserID.Equals("Admin"))
                         {
                             <div class="admin-special">
                                 <p class="review-username">@rating.UserID</p>
@@ -217,7 +223,7 @@
             else if (rating.Opinion is null && rating.RatingValue is not null)
             {
                 <div class="comment">
-                    @if (User.Identity.Name.Equals("Admin"))
+                    @if (rating.UserID.Equals("Admin"))
                     {
                         <div class="admin-special">
                             <p class="review-username">@rating.UserID</p>

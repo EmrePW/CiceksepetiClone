@@ -111,9 +111,9 @@ namespace CiceksepetiApp.Controllers
                 if (createResult.Succeeded)
                 {
                     var assignRoleResult = await _userManager.AddToRoleAsync(user, "User");
-                    var assignRoleResult2 = await _userManager.AddToRoleAsync(user, "Corporate");
+                    // var assignRoleResult2 = await _userManager.AddToRoleAsync(user, "Corporate");
                     company.UserID = user.Id;
-                    if (assignRoleResult.Succeeded && assignRoleResult2.Succeeded)
+                    if (assignRoleResult.Succeeded)
                     {
                         _manager.CompanyService.CreateCompany(company);
                         return RedirectToAction("Login");

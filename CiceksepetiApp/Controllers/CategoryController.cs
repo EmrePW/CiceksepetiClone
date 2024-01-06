@@ -30,6 +30,17 @@ namespace CiceksepetiApp.Controllers
             var model = _manager.ProductService.GetProductsWithFiltering(parameters, false);
             return View(model);
         }
+
+        public IActionResult MostRated(ProductRequestParameters parameters)
+        {
+            var model = _manager.ProductService.getMostRatedWithFiltering(parameters);
+            return View(model);
+        }
+        public IActionResult MostLiked(ProductRequestParameters parameters)
+        {
+            var model = _manager.ProductService.getMostLikedWithFiltering(parameters);
+            return View(model);
+        }
     }
 }
 

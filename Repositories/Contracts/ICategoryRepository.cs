@@ -6,6 +6,5 @@ namespace Repositories.Contracts
     {
         IQueryable<Category> GetSubcategories(int id, bool trackChanges);
 
-
     }
 }

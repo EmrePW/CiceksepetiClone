@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\Services\\Services.csproj": {}
+    "D:\\skool\\5th Half-Year\\DBMS\\CiceksepetiGitHub\\CiceksepetiClone\\Services\\Services.csproj": {}
   },
   "projects": {
-    "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\Entities\\Entities.csproj": {
+    "D:\\skool\\5th Half-Year\\DBMS\\CiceksepetiGitHub\\CiceksepetiClone\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\Entities\\Entities.csproj",
+        "projectUniqueName": "D:\\skool\\5th Half-Year\\DBMS\\CiceksepetiGitHub\\CiceksepetiClone\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\Entities\\Entities.csproj",
+        "projectPath": "D:\\skool\\5th Half-Year\\DBMS\\CiceksepetiGitHub\\CiceksepetiClone\\Entities\\Entities.csproj",
         "packagesPath": "C:\\Users\\Pc\\.nuget\\packages\\",
-        "outputPath": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\Entities\\obj\\",
+        "outputPath": "D:\\skool\\5th Half-Year\\DBMS\\CiceksepetiGitHub\\CiceksepetiClone\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -83,14 +83,14 @@
         }
       }
     },
-    "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\Repositories\\Repositories.csproj": {
+    "D:\\skool\\5th Half-Year\\DBMS\\CiceksepetiGitHub\\CiceksepetiClone\\Repositories\\Repositories.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\Repositories\\Repositories.csproj",
+        "projectUniqueName": "D:\\skool\\5th Half-Year\\DBMS\\CiceksepetiGitHub\\CiceksepetiClone\\Repositories\\Repositories.csproj",
         "projectName": "Repositories",
-        "projectPath": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\Repositories\\Repositories.csproj",
+        "projectPath": "D:\\skool\\5th Half-Year\\DBMS\\CiceksepetiGitHub\\CiceksepetiClone\\Repositories\\Repositories.csproj",
         "packagesPath": "C:\\Users\\Pc\\.nuget\\packages\\",
-        "outputPath": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\Repositories\\obj\\",
+        "outputPath": "D:\\skool\\5th Half-Year\\DBMS\\CiceksepetiGitHub\\CiceksepetiClone\\Repositories\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -111,8 +111,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\Entities\\Entities.csproj": {
-                "projectPath": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\Entities\\Entities.csproj"
+              "D:\\skool\\5th Half-Year\\DBMS\\CiceksepetiGitHub\\CiceksepetiClone\\Entities\\Entities.csproj": {
+                "projectPath": "D:\\skool\\5th Half-Year\\DBMS\\CiceksepetiGitHub\\CiceksepetiClone\\Entities\\Entities.csproj"
               }
             }
           }
@@ -170,14 +170,14 @@
         }
       }
     },
-    "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\Services\\Services.csproj": {
+    "D:\\skool\\5th Half-Year\\DBMS\\CiceksepetiGitHub\\CiceksepetiClone\\Services\\Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\Services\\Services.csproj",
+        "projectUniqueName": "D:\\skool\\5th Half-Year\\DBMS\\CiceksepetiGitHub\\CiceksepetiClone\\Services\\Services.csproj",
         "projectName": "Services",
-        "projectPath": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\Services\\Services.csproj",
+        "projectPath": "D:\\skool\\5th Half-Year\\DBMS\\CiceksepetiGitHub\\CiceksepetiClone\\Services\\Services.csproj",
         "packagesPath": "C:\\Users\\Pc\\.nuget\\packages\\",
-        "outputPath": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\Services\\obj\\",
+        "outputPath": "D:\\skool\\5th Half-Year\\DBMS\\CiceksepetiGitHub\\CiceksepetiClone\\Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -198,11 +198,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\Entities\\Entities.csproj": {
-                "projectPath": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\Entities\\Entities.csproj"
+              "D:\\skool\\5th Half-Year\\DBMS\\CiceksepetiGitHub\\CiceksepetiClone\\Entities\\Entities.csproj": {
+                "projectPath": "D:\\skool\\5th Half-Year\\DBMS\\CiceksepetiGitHub\\CiceksepetiClone\\Entities\\Entities.csproj"
               },
-              "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\Repositories\\Repositories.csproj": {
-                "projectPath": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\Repositories\\Repositories.csproj"
+              "D:\\skool\\5th Half-Year\\DBMS\\CiceksepetiGitHub\\CiceksepetiClone\\Repositories\\Repositories.csproj": {
+                "projectPath": "D:\\skool\\5th Half-Year\\DBMS\\CiceksepetiGitHub\\CiceksepetiClone\\Repositories\\Repositories.csproj"
               }
             }
           }

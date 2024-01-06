@@ -1,0 +1,67 @@
+<head>
+    <link rel="stylesheet" href="~/css/adminHeader.css">
+</head>
+
+<div class="header-wrapper">
+    <div class="greeting">
+        <div class="profile_picture">
+            <a asp-area="Admin" asp-controller="Dashboard" asp-action="Index">
+                <img src="~/images/admin-pfp.png" alt="">
+            </a>
+        </div>
+        <div>
+            <h2 class="username">Hello @User?.Identity?.Name</h2>
+        </div>
+        <div>
+            <h3 class="time">@DateTime.Now.ToLongDateString() @DateTime.Now.ToLongTimeString()</h3>
+        </div>
+    </div>
+    <nav class="adminNav">
+        <ul class="adminNavbar">
+            <li class="adminNavbar-item">
+                <a class="adminNavbar-link" asp-area="Admin" asp-controller="Company" asp-action="Index">
+                    <i class="fa-solid fa-building-user"></i>
+                    Compaines
+                </a>
+            </li>
+            <li class="adminNavbar-item">
+                <a class="adminNavbar-link" asp-area="Admin" asp-controller="Company" asp-action="Applications">
+                    <i class="fa-regular fa-clipboard"></i>
+                    Company Applications
+                </a>
+            </li>
+            <li class="adminNavbar-item">
+                <a class="adminNavbar-link" asp-area="Admin" asp-controller="User" asp-action="Index">
+                    <i class="fa-solid fa-users"></i>
+                    Users (Not Functional)
+                </a>
+            </li>
+            <li class="adminNavbar-item">
+                <a class="adminNavbar-link" asp-area="Admin" asp-controller="Product" asp-action="Index">
+                    <i class="fa-solid fa-list"></i>
+                    All Products (Not Functional)
+                </a>
+            </li>
+            <li class="adminNavbar-item">
+                <a class="adminNavbar-link" asp-area="Admin" asp-controller="Order" asp-action="Index">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Orders (Not Functional)
+                </a>
+            </li>
+            <li class="adminNavbar-item logout">
+                <a class="adminNavbar-link" asp-area="" asp-controller="Home" asp-action="Index">
+                    <i class="fa-solid fa-globe"></i>
+                    Web
+                </a>
+            </li>
+            <li class="adminNavbar-item">
+                <a class="adminNavbar-link" asp-area="" asp-controller="Account" asp-action="Logout">
+                    <i class="fa solid fa-right-from-bracket"></i>
+                    Logout
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+
+</div>

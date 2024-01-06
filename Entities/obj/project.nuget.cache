@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wmyVbR+uyzAg81mpnxRNxGR8j/It5/bkgox54xMh+MwKdXc5G5lEDBtvaDB1zH+Cigptj79wqHejXhoIzCG8KQ==",
+  "dgSpecHash": "rcF9klYbRBvHuZ1njFGwm6vFtjaLp1m9fM3+huLjrq79MkUk6LRFBQzOrgSn7qvaQEztK4yJ9V0kp570lF1dEw==",
   "success": true,
-  "projectFilePath": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\Entities\\Entities.csproj",
+  "projectFilePath": "D:\\skool\\5th Half-Year\\DBMS\\CiceksepetiGitHub\\CiceksepetiClone\\Entities\\Entities.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Pc\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.0\\microsoft.aspnetcore.cryptography.internal.6.0.0.nupkg.sha512",
     "C:\\Users\\Pc\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\6.0.0\\microsoft.aspnetcore.cryptography.keyderivation.6.0.0.nupkg.sha512",

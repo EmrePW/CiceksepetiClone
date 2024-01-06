@@ -54,5 +54,8 @@ namespace Entities.Models
         public bool? ApplicationAccepted { get; set; } = false;
 
         public ICollection<Product>? Products { get; set; }
+
+        public decimal? weeklyProfit { get; set; } = 0;
+        public decimal? Profit { get; set; } = 0;
     }
 }

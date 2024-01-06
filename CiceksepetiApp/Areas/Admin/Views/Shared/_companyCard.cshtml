@@ -1,0 +1,21 @@
+@model Company
+
+<head>
+    <link rel="stylesheet" href="~/css/adminCompanyCard.css">
+</head>
+
+<div class="card_wrapper">
+    <div class="company_name">
+        <h3><a class="company_link" asp-area="Admin" asp-controller="Company" asp-action="Get"
+                asp-route-id="@Model.CompanyID">
+                @Model.VirtualCompanyName
+            </a>
+        </h3>
+        <h4>@Model.CompanyName</h4>
+        <h4>@Model.City</h4>
+    </div>
+    <div class="company_profit">
+        <h3>Toplam Satış : @(Model.Profit ?? 0)</h3>
+        <h4>Haftalık Satış : @(Model.weeklyProfit ?? 0)</h4>
+    </div>
+</div>

@@ -23,7 +23,7 @@ namespace CiceksepetiApp.Controllers
         public async Task<IActionResult> Get([FromRoute(Name = "id")] int id)
         {
             var product = _manager.ProductService.GetOneProduct(id, false);
-            IEnumerable<Rating>? ratings = _manager.RatingService.GetByProduct(id, false) ?? Enumerable.Empty<Rating>();
+            IEnumerable<Rating> ratings = _manager.RatingService.GetByProduct(id, false) ?? Enumerable.Empty<Rating>();
 
             foreach (var rating in ratings)
             {
@@ -32,7 +32,9 @@ namespace CiceksepetiApp.Controllers
             }
 
             var fav_count = ratings.Count(rating => rating.IsFavourite.Equals(true));
+            var rating_count = ratings.Count(rating => rating.RatingValue is not null);
 
+            // Check to see if the user has already liked the item
             bool? isFavouriteItem = false;
             if (HttpContext.User.Identity.IsAuthenticated)
             {
@@ -44,7 +46,8 @@ namespace CiceksepetiApp.Controllers
             }
 
             ViewBag.Ratings = ratings;
-            ViewBag.AverageRating = !ratings.Count().Equals(0) ? ratings.Where(rating => rating.RatingValue is not null).Average(rating => Int64.Parse(rating.RatingValue)) : 0;
+            ViewBag.rating_count = rating_count;
+            ViewBag.AverageRating = !ratings.Count(rating => rating.RatingValue is not null).Equals(0) ? ratings.Where(rating => rating.RatingValue is not null).Average(rating => Int64.Parse(rating.RatingValue)) : 0;
             ViewBag.favouiteCount = fav_count;
             ViewBag.FavouriteItem = isFavouriteItem;
 

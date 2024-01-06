@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Services.Contracts;
 
-namespace CiceksepetiApp.Areas.Corporate
+namespace CiceksepetiApp.Areas.Corporate.Controllers
 {
     [Area("Corporate")]
     [Authorize(Roles = "Corporate")]
@@ -44,9 +44,12 @@ namespace CiceksepetiApp.Areas.Corporate
             }
             return View(lines_with_orders);
         }
-        public IActionResult Update([FromQuery] String? operation, [FromRoute] int id)
+        public async Task<IActionResult> Update([FromQuery] String? operation, [FromRoute] int id)
         {
+            var currentUser = await _userManager.FindByNameAsync(HttpContext.User?.Identity?.Name);
+            Company? currentcompany = _manager.CompanyService.GetCompanies(false).Where(comp => comp.UserID.Equals(currentUser.Id)).FirstOrDefault();
             var orders = _manager.OrderService.Orders;
+
             CartLine? line = new CartLine();
             Order? line_order = new Order();
             foreach (var order in orders)
@@ -90,7 +93,13 @@ namespace CiceksepetiApp.Areas.Corporate
                 {
                     line_order.Completed = true;
                 }
+
+                currentcompany.Profit += line.Product.DiscountedPrice ?? line.Product.UnitPrice;
+                currentcompany.weeklyProfit += line.Product.DiscountedPrice ?? line.Product.UnitPrice;
+
                 _manager.OrderService.SaveOrder(line_order);
+                _manager.CompanyService.SaveCompany(currentcompany);
+
             }
             return RedirectToAction("Index");
         }

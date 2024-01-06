@@ -1,0 +1,25 @@
+@model Company
+
+<head>
+    <link rel="stylesheet" href="~/css/adminPendingCompanyCard.css">
+</head>
+
+<div class="pendingWrapper">
+    <div class="company_name">
+        <h3>@Model.VirtualCompanyName</h3>
+        <h4>@Model.CompanyName</h4>
+    </div>
+    <div class="company_contact">
+        <h4>@Model.ContactName</h4>
+        <h4>@Model.PhoneNumber</h4>
+        <h4>@Model.Email</h4>
+    </div>
+    <div class="company_address">
+        <h4>@Model.Address @Model.City</h4>
+        <h4>@Model.Country</h4>
+    </div>
+    <div class="company_ops">
+        <a class="company_detail" asp-area="Admin" asp-controller="Company" asp-action="Get"
+            asp-route-id="@Model.CompanyID">Detay</a>
+    </div>
+</div>

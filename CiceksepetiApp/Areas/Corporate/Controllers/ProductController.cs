@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Services.Contracts;
 
-namespace CiceksepetiApp.Areas.Corporate
+namespace CiceksepetiApp.Areas.Corporate.Controllers
 {
     [Area("Corporate")]
     [Authorize(Roles = "Corporate")]
@@ -31,14 +31,21 @@ namespace CiceksepetiApp.Areas.Corporate
         //     return new SelectList(_manager.CategoryService.GetAllCategories(false), "CategoryID", "CategoryName", "1");
         // }
 
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index([FromQuery] String? outOfStock)
         {
             var currentUser = await _userManager.FindByNameAsync(HttpContext.User?.Identity?.Name);
             var companyID = _manager.CompanyService.GetCompanies(false).Where(comp => comp.UserID.Equals(currentUser.Id))?.FirstOrDefault()?.CompanyID;
-            IEnumerable<Product> allProducts = _manager.ProductService.GetAllProducts(false).Where(prd => prd.CompanyID.Equals(companyID));
+            IQueryable<Product> allProducts = _manager.ProductService.getCompanyProducts(companyID);
+
+            if (outOfStock is not null)
+            {
+                allProducts = _manager.ProductService.getOutofStockProducts(companyID);
+            }
 
             return View(allProducts);
+
         }
+
 
         public IActionResult Get([FromRoute] int id)
         {

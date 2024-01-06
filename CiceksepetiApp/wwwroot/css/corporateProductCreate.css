@@ -6,6 +6,26 @@
   flex-direction: column;
 }
 
+.product-info {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 25%;
+}
+
+.image > img {
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
 .createHeader {
   text-align: center;
   font-weight: 200;
@@ -107,4 +127,28 @@
 }
 .create-submit:hover {
   opacity: 0.7;
+}
+
+.buttons {
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+}
+.create-go-back {
+  background: transparent;
+  border: 2px solid var(--clr-primary);
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.create-go-back:hover > a {
+  color: var(--clr-primary);
+}
+
+.create-go-back > a {
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem 1rem;
+  color: var(--clr-secondary);
+  transition: color 0.2s;
 }

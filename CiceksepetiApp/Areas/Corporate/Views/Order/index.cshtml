@@ -1,7 +1,10 @@
 @model List<OrderLineModel>
 
 <div class="centered" style="width: 90%;">
-
+    @if (Model.Count.Equals(0))
+    {
+        <h2>There are no orders yet...</h2>
+    }
     @foreach (var line in Model)
     {
         <partial name="_orderCard" model="line"></partial>

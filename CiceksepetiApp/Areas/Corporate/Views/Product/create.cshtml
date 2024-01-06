@@ -39,8 +39,17 @@
             <label asp-for="Summary">Özet bilgi</label>
             <textarea asp-for="Summary" id="" cols="30" rows="4"></textarea>
         </div>
-        <div class="createForm__area">
-            <button class="create-submit" type="submit">Create Product</button>
+        <div class="createForm__area buttons">
+            <button class="create-go-back" type="button">
+                <a asp-area="Corporate" asp-controller="Product" asp-action="Index">
+                    <i class="fa-solid fa-angles-left"></i>
+                    Go Back
+                </a>
+            </button>
+            <button class="create-submit" type="submit">
+                <i class="fa-solid fa-plus"></i>
+                Create Product
+            </button>
         </div>
     </form>
 </div>

@@ -1,0 +1,38 @@
+@model IEnumerable<Company>
+
+<head>
+    <link rel="stylesheet" href="~/css/adminCompanyApp.css">
+    <link rel="stylesheet" href="~/css/adminCompanyIndex.css">
+</head>
+
+<div class="wrapper">
+    @foreach (var item in Model)
+    {
+        <div class="company" style="margin-bottom: 1.5rem">
+            <div class="company__name">
+                <h2>@item.VirtualCompanyName</h2>
+                <h3>@item.CompanyName</h3>
+                <h3>Ürün Sayısı : @await Component.InvokeAsync("CompanyProductCount", item.CompanyID)</h3>
+            </div>
+            <div class="company__info_contact">
+                <div class="company__info">
+                    <div>Mağaza Tipi : @(item.CompanyType ?? "N/A")</div>
+                    <div>Satış Kategorisi : @(item.SellCategory ?? "N/A")</div>
+                    <div>Mağaza Amacı : @(item.CompanyOwner ?? "N/A")</div>
+                    <div>Mağaza Türü : @(item.CompanyTradeType ?? "N/A")</div>
+                </div>
+                <div class="company__contact">
+                    <div>Sorumlu İsmi : @item.ContactName</div>
+                    <div>Sorumlu Email : @item.Email</div>
+                    <div>Sorumlu Telefon : @item.PhoneNumber</div>
+                </div>
+            </div>
+            <div class="company__tax_address">
+                <div class="company__address">
+                    <div>@item.Address</div>
+                    <div>@item.City @item.Country</div>
+                </div>
+            </div>
+        </div>
+    }
+</div>

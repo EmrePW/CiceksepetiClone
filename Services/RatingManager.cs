@@ -56,5 +56,10 @@ namespace Services
             }
             return ratings;
         }
+
+        public IQueryable<Rating> GetRatedProducts()
+        {
+            return _manager.Ratings.GetRatedProducts();
+        }
     }
 }

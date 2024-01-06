@@ -1,0 +1,23 @@
+h3,
+h4 {
+  font-weight: 400;
+}
+
+.card_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: hsl(0, 0%, 8%);
+  border-radius: 0.5rem;
+  margin-block: 1rem;
+}
+
+.company_link {
+  color: var(--clr-secondary);
+  transition: color 0.2s;
+}
+
+.company_link:hover {
+  color: var(--clr-primary);
+}

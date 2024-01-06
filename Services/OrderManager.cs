@@ -29,7 +29,7 @@ namespace Services
 
         public Order? GetOrderByTracking(int trackId)
         {
-            return _manager.Order.GetByTracking(trackId);
+            return _manager.Order.Orders.Where(order => order.trackingNumber.Equals(trackId)).FirstOrDefault();
         }
 
         public IQueryable<Order> GetOrdersbyUser(string? userid)

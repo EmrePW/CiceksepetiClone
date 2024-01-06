@@ -24,23 +24,24 @@
                 @foreach (var item in Model)
                 {
                     <div class="item-wrapper">
+                        @{
+                            Product? current_product = new Product();
+                            foreach (var prd in ViewBag.Products)
+                            {
+                                if (item.ProductID.Equals(prd.ProductID))
+                                {
+                                    current_product = prd;
+                                }
+                            }
+                        }
                         <div class="item-image">
-                            @* <img src="@item.ImageURL" alt="Image not found"> *@
-                            <div style="width:75px; aspect-ratio: 1; border-radius: .5rem; background-color:red;"></div>
+                            <img style="width:75px; aspect-ratio: 1; border-radius: .5rem;"
+                                src="@(current_product.ImageURL ?? "/images/default.png")" alt="Image not found">
                         </div>
                         <div class="item-name">
                             <a class="item-name-link" asp-area="" asp-controller="Product" asp-action="Get"
                                 asp-route-id="@item.ProductID">
-                                @{
-                                    Product? current_product = new Product();
-                                    foreach (var prd in ViewBag.Products)
-                                    {
-                                        if (item.ProductID.Equals(prd.ProductID))
-                                        {
-                                            current_product = prd;
-                                        }
-                                    }
-                                }@current_product.ProductName
+                                @current_product.ProductName
                             </a>
                             <div class="stars">
                                 @for (int i = 1; i <= Int16.Parse(item.RatingValue); i++)

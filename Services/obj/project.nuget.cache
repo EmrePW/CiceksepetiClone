@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aaN4hJZuKEEYb4i+hO/OBFTrxO8q/ZGyGenO//ox5yZrC+Af19BNijz6nO2YOIDuUPXe1S6cJj5aR3YZHAmhRw==",
+  "dgSpecHash": "w7bxOnE1KsKLNNnKUc9NxNIti56qLrPPuhjyT857FxTPZ/Dhex9UCWEqlCWCzXSzgvsjBBS+Hqp+9sF3/Db5PQ==",
   "success": true,
-  "projectFilePath": "D:\\skool\\5th Half-Year\\DBMS\\Ciceksepeti\\Services\\Services.csproj",
+  "projectFilePath": "D:\\skool\\5th Half-Year\\DBMS\\CiceksepetiGitHub\\CiceksepetiClone\\Services\\Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Pc\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Pc\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

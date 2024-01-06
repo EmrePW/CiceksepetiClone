@@ -7,8 +7,10 @@
 </head>
 
 <a asp-controller="Product" asp-action="get" asp-route-id="@Model.ProductID" class="productCard">
-    <div class="product_img">
-        <img src="@(Model.ImageURL ?? "/images/default.png")" alt="">
+    <div class="center-trick">
+        <div class="product_img">
+            <img src="@(Model.ImageURL ?? "/images/default.png")" alt="">
+        </div>
     </div>
     <div class="product_info">
 

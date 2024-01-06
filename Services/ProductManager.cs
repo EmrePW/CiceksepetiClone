@@ -61,5 +61,30 @@ namespace Services
         {
             return _manager.Product.getProductsWithFilters(parameters, trackChanges);
         }
+
+        public IQueryable<Product> getCompanyProducts(int? id)
+        {
+            return _manager.Product.getCompanyProducts(id);
+        }
+
+        public IQueryable<Product> getMostRatedWithFiltering(ProductRequestParameters parameters)
+        {
+            return _manager.Product.getMostRatedProducts(parameters);
+        }
+
+        public IQueryable<Product> getMostLikedWithFiltering(ProductRequestParameters parameters)
+        {
+            return _manager.Product.getMostLikedProducts(parameters);
+        }
+
+        public IQueryable<Product> getOutofStockProducts(int? companyID)
+        {
+            return _manager.Product.getOutOfStockProducts(companyID);
+        }
+
+        public void DecrementStock(int id)
+        {
+            _manager.Product.decrementStock(id);
+        }
     }
 }

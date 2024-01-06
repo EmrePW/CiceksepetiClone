@@ -37,6 +37,7 @@
 }
 
 .product-image > img {
+  aspect-ratio: 1;
   border-radius: 0.75rem;
 }
 .actions {
@@ -76,8 +77,29 @@ svg {
 
 .create-new {
   padding: 0.75rem 1rem;
-  border: 2px solid lightgreen;
+  border: 2px solid hsl(120, 73%, 50%);
   border-radius: 1rem;
-  color: lightgreen;
+  color: hsl(120, 73%, 50%);
+  text-decoration: none;
+}
+
+.create-new:hover > svg {
+  scale: 1.12;
+  rotate: 90deg;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-block: 1rem;
+}
+
+.filter-button {
+  color: hsl(357, 93%, 59%);
+  padding: 0.75rem 1rem;
+  border: 2px solid hsl(357, 93%, 59%);
+  border-radius: 1rem;
   text-decoration: none;
 }

@@ -1,4 +1,5 @@
 using Entities.Models;
+using Microsoft.EntityFrameworkCore;
 using Repositories.Contracts;
 
 namespace Repositories
@@ -29,12 +30,33 @@ namespace Repositories
 
         public IEnumerable<Rating>? GetRatingsByUser(string? userid, bool trackChanges)
         {
-            var ratings = GetAll(trackChanges).Where(rating => rating.UserID.Equals(userid)).ToList();
+            var ratings = _context.Ratings?.FromSqlInterpolated($"exec up_GetRatings {userid}");
             if (ratings is null)
             {
                 return Enumerable.Empty<Rating>();
             }
             return ratings;
+        }
+        public IEnumerable<Rating>? GetFavouriteProductsByUser(string? userid, bool trackChanges)
+        {
+            var ratings = _context.Ratings?.FromSqlInterpolated($"exec up_GetFavouriteProducts {userid}");
+            if (ratings is null)
+            {
+                return Enumerable.Empty<Rating>();
+            }
+            return ratings;
+        }
+
+        public IQueryable<Rating> GetRatedProducts()
+        {
+            IEnumerable<Rating> sql_result = Enumerable.Empty<Rating>();
+            if (_context.Ratings is null)
+            {
+                return sql_result.AsQueryable<Rating>();
+            }
+            sql_result = _context.Ratings.FromSqlInterpolated($"select * from vw_RatedProducts");
+
+            return sql_result.AsQueryable<Rating>();
         }
     }
 }

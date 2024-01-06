@@ -28,7 +28,7 @@
         </div>
         <div class="createForm__area">
             <label asp-for="Summary">Özet düzenle</label>
-            <input type="text" asp-for="Summary">
+            <textarea asp-for="Summary" cols="30" rows="4"></textarea>
         </div>
         <div class="createForm__area">
             <label asp-for="DiscountedPrice">İndirimli Fiyat</label>
@@ -47,8 +47,17 @@
             <input type="file" name="file" id="">
 
         </div>
-        <div class="createForm__area">
-            <button class="create-submit" type="submit">Güncelle</button>
+        <div class="createForm__area buttons">
+            <button class="create-go-back" type="button">
+                <a asp-area="Corporate" asp-controller="Product" asp-action="Index">
+                    <i class="fa-solid fa-angles-left"></i>
+                    Go Back
+                </a>
+            </button>
+            <button class="create-submit" type="submit">
+                Güncelle
+                <i class="fa-solid fa-angles-right"></i>
+            </button>
         </div>
     </form>
 </div>

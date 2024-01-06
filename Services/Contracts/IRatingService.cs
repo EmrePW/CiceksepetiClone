@@ -10,7 +10,7 @@ namespace Services.Contracts
 
         public IEnumerable<Rating> GetAllRatings(bool trackChanges);
 
-        // public IEnumerable<Rating> GetByCompany()
+        public IQueryable<Rating> GetRatedProducts();
 
         public Rating? GetOneRating(string user_id, int product_id, bool trackChanges);
 

@@ -24,18 +24,20 @@ namespace CiceksepetiApp.Areas.Corporate
         public async Task<IActionResult> Index()
         {
             var currentUser = await _userManager.FindByNameAsync(HttpContext.User?.Identity?.Name);
-            var companyID = _manager.CompanyService.GetCompanies(false).Where(comp => comp.UserID.Equals(currentUser.Id))?.FirstOrDefault()?.CompanyID;
-            if (companyID is null)
+            var currentcompany = _manager.CompanyService.GetCompanies(false).Where(comp => comp.UserID.Equals(currentUser.Id))?.FirstOrDefault();
+            if (currentcompany is null)
             {
                 ViewBag.Products = Enumerable.Empty<Product>();
                 ViewBag.Orders = Enumerable.Empty<Order>();
+                ViewBag.lines_with_orders = new List<OrderLineModel>();
                 ViewBag.ProductCount = "NULL";
                 ViewBag.PendingOrders = "NULL";
                 ViewBag.AverageRating = "NULL";
+                ViewBag.TotalProfit = "NULL";
 
                 return View();
             }
-            IEnumerable<Product> allProducts = _manager.ProductService.GetAllProducts(false).Where(prd => prd.CompanyID.Equals(companyID));
+            IEnumerable<Product> allProducts = _manager.ProductService.getCompanyProducts(currentcompany.CompanyID);
             IEnumerable<Rating> allRatings = _manager.RatingService.GetAllRatings(false);
             IQueryable<Order> allOrders = _manager.OrderService.Orders;
             List<OrderLineModel> lines_with_orders = new List<OrderLineModel>();
@@ -44,7 +46,7 @@ namespace CiceksepetiApp.Areas.Corporate
 
             foreach (var Order in allOrders)
             {
-                var result = Order.Items.Where(line => line.Product.CompanyID.Equals(companyID));
+                var result = Order.Items.Where(line => line.Product.CompanyID.Equals(currentcompany.CompanyID));
                 orders.AddRange(result);
                 foreach (var line1 in result)
                 {
@@ -59,9 +61,11 @@ namespace CiceksepetiApp.Areas.Corporate
                 }
             }
 
+
             foreach (var prd in allProducts)
             {
-                var result = allRatings.Where(rating => rating.ProductID.Equals(prd.ProductID) && rating.RatingValue is not null);
+                // var result = allRatings.Where(rating => rating.ProductID.Equals(prd.ProductID) && rating.RatingValue is not null);
+                var result = _manager.RatingService.GetRatedProducts().Where(rating => rating.ProductID.Equals(prd.ProductID));
                 ratings.AddRange(result);
             }
             ViewBag.Orders = orders;
@@ -70,7 +74,7 @@ namespace CiceksepetiApp.Areas.Corporate
             ViewBag.Products = allProducts.OrderByDescending(prd => prd.ProductID).Take(4);
             ViewBag.ProductCount = allProducts.Count();
             ViewBag.lines_with_orders = lines_with_orders;
-            ViewBag.TotalProfit = orders.Where(line => line.IsCompleted.Equals(true)).Sum(line => line.Product.DiscountedPrice ?? line.Product.UnitPrice);
+            ViewBag.TotalProfit = currentcompany.Profit;
             return View();
         }
     }
